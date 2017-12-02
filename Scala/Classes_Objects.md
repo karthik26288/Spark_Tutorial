@@ -67,3 +67,37 @@ object Hello {
   }
 }
 ```
+## Access Modifiers:
+
+* There are three types:
+  * public i.e., default no need to specify
+  * private
+  * protected
+```
+class Employee {
+.....
+}
+
+The class is public here....
+
+class Employee {
+   private var name:String = null
+   private var age:Int = 0
+   private var place:String = null
+   
+   def setName(name:String) = {
+    this.name = name
+   }
+   def getName(): String = {
+       (this.name)
+   }
+}
+
+object Emp {
+  def main(args:Array[String]) {
+    val emp = new Employee()
+    emp.setName("Naga")
+    println(emp.getName)
+  }
+}
+```
