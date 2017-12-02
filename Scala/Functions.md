@@ -137,3 +137,13 @@ object Test {
    }
 }
 ```
+
+## Closures:
+* Scala closure is a function, whose return value depends on the value of one or more variables declared outside this function.
+```
+	val a = 20
+	val sum = (b:Int) => b + a
+	sum(30)
+	res17: Int = 50
+```
+
