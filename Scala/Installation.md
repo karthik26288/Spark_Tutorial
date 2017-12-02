@@ -12,3 +12,12 @@
   > scala -version
   > scalac -version
   ```
+ ## Scala IDEs
+ * Scala Eclipse (Standalone)
+ * Scala Shell (Interactive)
+ * Scala Notebook (Interactive)
+ * Zepplein Notebook (Interactive)
+ * Sublime Text Editor (Standalone)
+ * Vim/Vi Editor (Standalone)
+ * InteliJ (Standalone)
+ * Many more editors
