@@ -1,15 +1,13 @@
-Scala function is a group of statements that performs a task. We can divide the code into separate functions 
-such that each function performs a specific task.
-There is minor difference between scala methods and functions.
-
-A method is the one which is part of a class and has name and signature where as scala function is an object that
+## Scala Functions:
+* Scala function is a group of statements that performs a task. 
+* We can divide the code into separate functions such that each function performs a specific task.
+* There is minor difference between scala methods and functions.
+	* A method is the one which is part of a class and has name and signature where as scala function is an object that
 could be assigned to a variable.
-
-In simple words to say, function defined as member of some object is called a method.
-
-Scala also has support for nested functions.
-
-Scala Function definition:
+	* In simple words to say, function defined as member of some object is called a method.
+* Scala also has support for nested functions.
+* Scala Function definition:
+```
 def functionName ([list of parameters]) : [return type] = {
    function body
    return [expr]
@@ -33,9 +31,10 @@ def sum(a:Int, b:Int) : Int = {
     return (a + b)
    }
  }
-Function which returns nothing can return Unit that is equivalent to void in Java.
-Funtions that donot return anything are called Procedures.
-
+```
+* Function which returns nothing can return Unit that is equivalent to void in Java.
+* Funtions that donot return anything are called Procedures.
+```
 Example of a function that returns nothing:
 object Hello{
    def main(args:Array[String]) : Unit = {
@@ -45,15 +44,14 @@ object Hello{
       println("Hello, Scala!")
    }
 }
+```
 
-
-Functions call-by-name:
-Typically, the parameters of the function would be by-value parameters which means the value of the parameter is 
+* Functions call-by-name:
+	* Typically, the parameters of the function would be by-value parameters which means the value of the parameter is 
 determined before it is passed to the function.
-
-Suppose if we would need a function that accepts an expression as a parameter which will not be evaluated until it 
+	* Suppose if we would need a function that accepts an expression as a parameter which will not be evaluated until it 
 is called within our function. To support this feature, scala offers call-by-name parameters.
-
+```
 Example:
 object CallByName
 {
@@ -78,7 +76,6 @@ Output:
 In delayed method..
 In calc function...
 Parameter value is..9
-
 
 In the above example calc() is the parameter to delayed() function. 
 Once the delayed is invoked, the message : "In delayed method" is printed indicating that delayed() has been entered.
@@ -139,3 +136,4 @@ object Test {
       return sum
    }
 }
+```
