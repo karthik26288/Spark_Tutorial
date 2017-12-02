@@ -54,3 +54,17 @@ object Emp {
 }
 
 '''
+## Singleton Objects:
+* Scala is pure Object Oriented and there are no static members.
+* Scala has Singleton objects instead of static memners.
+* Singleton is class that can have only one instance of Object.
+* We create singleton using the keyword object instead of class keyword.
+* There is no instantiation and there is no parameters passing to constructor.
+```
+Example:
+object Hello {
+  def main(args:Array[String]){
+    println("Hai")
+  }
+}
+```
