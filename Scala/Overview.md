@@ -28,5 +28,3 @@
 * Scala is interoperable with Java
 * Scala Type Inference
 * Scala closures
-
-
