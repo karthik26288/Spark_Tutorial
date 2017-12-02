@@ -20,4 +20,37 @@ class Employee(name:String, age:Int, role:String) {
   def getRole(): String = {
     (role)
   }
+  
 }
+
+Object Example:
+
+object Emp {
+  def main(args:Array[String]) : Unit = {
+    val emp = new Employee("Naga", 30, "Architect")
+    println(emp.getName)
+    println(emp.getAge)
+    println(emp.getRole)
+  }
+}
+
+Extending Classes:
+
+class Manager(name:String, age:Int, role:String, team:String) extends Employee(name:String, age:Int, role:String){
+    val this.team = team
+    def getTeam() : String = {
+        return team
+    }
+}
+
+object Emp {
+  def main(args:Array[String]) : Unit = {
+    val emp = new Manager("Naga", 30, "Architect", "Hadoop")
+    println(emp.getName)
+    println(emp.getAge)
+    println(emp.getRole)
+    println(emp.getTeam)
+  }
+}
+
+'''
