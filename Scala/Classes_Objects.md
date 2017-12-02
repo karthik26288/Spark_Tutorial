@@ -52,8 +52,7 @@ object Emp {
     println(emp.getTeam)
   }
 }
-
-'''
+```
 ## Singleton Objects:
 * Scala is pure Object Oriented and there are no static members.
 * Scala has Singleton objects instead of static memners.
