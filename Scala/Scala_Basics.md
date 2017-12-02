@@ -32,9 +32,12 @@
 ### Scala Hello World Program:
 
 ##### Interactive Mode:
-    ``` println("Hello World") ```
+    ``` 
+    println("Hello World")
+    ```
 ##### Script Mode:
-    ``` object Hello {
+    ``` 
+    object Hello {
       def main(args:Array[String]) {
         println("Hello World")
       }
