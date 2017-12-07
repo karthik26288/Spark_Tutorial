@@ -171,7 +171,22 @@ for(i <- ScalaCollection){
 * Scala supports thre types of comments
   * Single line ```//```
   * Multi line ```/*....*/```
-  * Documentation ```/** **** */
+  * Documentation ```/** **** */```
   
 ***************
 ## Scala Functions
+* Scala supports functional programming
+* Scala has lot of builtin functions and also supports for user defined functions.
+* Scala Functions are first class values.
+* Store Scala Function as value
+* Every value in Scala is an Object i.e., Scala function also an Object.
+* Scala allows passing a function as method/function argument and return function as another function return value.
+* Scala functions are defined with keyword *def* like in Python and Ruby.
+
+#### Scala Function Definition:
+```
+def functionName([funcParams : typeofparameters]) : [returntypeoffunction] = {  
+statements...
+[(return_value)]
+}
+```
