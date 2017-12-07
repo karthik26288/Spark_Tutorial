@@ -26,4 +26,16 @@
   * Streaming Applications
   * Parallel and batch processing applications
   * etc...
-* 
+* Scala is crisp, productive and easy to learn.
+* Scala Hello World Progrom:
+```
+  Interactive Mode using scala, scala notebook, zeppelin etc...
+     println("Hello World")
+  Standalone Mode:
+  object HelloWorld {
+    def main(args:Array[String]) {
+       println("Hello World")
+    }
+  }
+```
+**************
