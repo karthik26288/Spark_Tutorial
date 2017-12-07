@@ -190,3 +190,11 @@ statements...
 [(return_value)]
 }
 ```
+#### Higher Order Functions:
+* Scala higher order function is a function that either takes a function as argument or returns a function
+```
+def functionName(<another function>) : <another function> = {
+ statements.....
+}
+
+```
