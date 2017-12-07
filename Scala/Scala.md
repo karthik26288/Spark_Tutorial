@@ -138,3 +138,30 @@ case 3 => statements
 case _ => statements
 }
 ```
+#### Loops
+* while loop
+* do while loop
+* for loop
+```
+while loop:
+
+while(<condition>){
+ statements
+}
+
+do-while loop:
+
+do{
+ statements
+}while(<Condition>)
+
+for loop:
+
+for(i <- range){
+ statements
+}
+
+for(i <- ScalaCollection){
+ statements...
+}
+```
