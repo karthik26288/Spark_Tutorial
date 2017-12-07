@@ -198,3 +198,87 @@ def functionName(<another function>) : <another function> = {
 }
 
 ```
+
+****************************
+## Scala Classes and Objects
+* Scala is pure Object oriented programming language
+* Object is a real world entity. It contains state and behaviour
+* Class is a blueprint/template of an Object.
+* Scala class contains the following things:
+  * Data member
+  * Member method
+  * Constructor
+  * Block
+  * Nested class
+  * Super class information
+* In Scala, the default scope is public
+
+```
+Class:
+
+class Employee{
+var name:String = null
+var age:Int = 0
+}
+
+Object
+
+object EmpExample{
+ def main(args:Array[String]) {
+  val emp = new Employee()
+  println(emp.name)
+  println(emp.age)
+ }
+}
+
+
+class Employee(name:String, age:Int){
+ def getName():String = {
+  (name)
+ }
+ def getAge():Int = {
+ (age)
+ }
+}
+
+Object
+
+object EmpExample{
+ def main(args:Array[String]) {
+  val emp = new Employee("Naga", 30)
+  println(emp.name)
+  println(emp.age)
+  println(emp.getName)
+  println(emp.getAge)
+  println(new Employee("Rajesh", 40).getName()) // Ananymous Object
+ }
+}
+```
+### Singleton and Companion object
+* Singleton object is an object which is declared by using object keyword instead by class.
+* In Scala, there is no static concept. So scala creates a singleton object to provide entry point for your program execution.
+* Methods declared inside Singleton Object are accessible globally.
+* Singleton object can extend classes and traits.
+```
+object SingletonObjectName {
+variables + methods
+}
+```
+* In scala, when you have a class with same name as singleton object, it is called companion class and the singleton object is called companion object.
+* Both the companion class and its companion object both must be defined in the same source file.
+```
+sample.scala
+
+object Hello {
+ def main(args:Array[String]){
+   val hello = new Hello()
+   hello.message()
+ }
+}
+
+class Hello {
+ def message(){
+  println("Hello")
+ }
+}
+```
