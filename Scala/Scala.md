@@ -127,7 +127,7 @@ if(<condition>){
 }else{
  statements....
 ```
-*Note: Use Ternary operator instead of if-else statements i.e., <condition> ? <true case> : <false case>*
+*Note: Use Ternary operator instead of if-else statements i.e., ```<condition> ? <true case> : <false case>```*
 #### Scala Pattern Matching:
 ```
 variable match {
