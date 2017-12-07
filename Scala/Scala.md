@@ -48,26 +48,15 @@
 ```
 **************
 ## Scala Features:
-* Type inference
-  Scala offers Type Inference i.e., no need to provide the data type explicitly
-* Singleton objects
-  Scala offers Singleton i.e., no static members.
-* Immutability
-  Scala offers Immutability i.e., can not modify variable values.
-* Lazy computation
-  Scala offers Lazy computation i.e., it evaluates expressions only when they are required.
-* Case classes and Pattern matching
-  Scala case classes are regular classes but there are immutable. Scala case classes are used in combination with Scala pattern matching.
-* Concurrency control
-  Scala provides actor model for better handling of Concurrency.
-* String interpolation
-  Scala String interpolation allows embedding variables as part of Scala string.
-* Higher order function
-  Scala offers high order functions i.e., function takes another function as argument or function returns another function as return value.
-* Traits
-  Scala provides trait which contains fields and methods of type abstract and non abstract.
-* Rich collection set
-  Scala provides a rich set of mutable and immutable collections to manipulate the data.
-* Closures
-  Scala offers ananymous functions
+* Type inference: Scala offers Type Inference i.e., no need to provide the data type explicitly
+* Singleton objects: Scala offers Singleton i.e., no static members.
+* Immutability: Scala offers Immutability i.e., can not modify variable values.
+* Lazy computation: Scala offers Lazy computation i.e., it evaluates expressions only when they are required.
+* Case classes and Pattern matching: Scala case classes are regular classes but there are immutable. Scala case classes are used in combination with Scala pattern matching.
+* Concurrency control: Scala provides actor model for better handling of Concurrency.
+* String interpolation: Scala String interpolation allows embedding variables as part of Scala string.
+* Higher order function: Scala offers high order functions i.e., function takes another function as argument or function returns another function as return value.
+* Traits: Scala provides trait which contains fields and methods of type abstract and non abstract.
+* Rich collection set: Scala provides a rich set of mutable and immutable collections to manipulate the data.
+* Closures: Scala offers ananymous functions
 * etc...
