@@ -60,3 +60,34 @@
 * Rich collection set: Scala provides a rich set of mutable and immutable collections to manipulate the data.
 * Closures: Scala offers ananymous functions
 * etc...
+
+
+********************
+## Scala Variables and Data Types
+* Scala allows two types of variables i.e., val and var
+* val is constant i.e., immutable
+* var is modifiable i.e., mutable.
+
+```
+val name = "Naga"
+name = "Ravi" // This throws error
+
+var age = 30
+age = 35 // This works
+```
+* The following are standard data types in Scala which are similar to Java. The only difference is which are Objects rather than primitives.
+  * Byte
+  * Short
+  * Int
+  * Long
+  * Float
+  * Double
+  * String
+  * Char
+  * Boolean
+  * Null
+  * Nothing
+  * Any
+  * AnyRef
+  * AnyVal
+  * etc...
