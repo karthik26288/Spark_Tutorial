@@ -91,3 +91,46 @@ age = 35 // This works
   * AnyRef
   * AnyVal
   * etc...
+
+*******************
+## Scala Control structures:
+* Scala offers the following control structures which are used control flow of Scala program.
+  * Conditional Statements
+    * if, if-else, nested if-else, if-else ladder
+  * Scala Pattern Matching
+  * Scala loops
+
+#### Conditional Statements:
+##### if-statement
+```
+   Syntax:
+   if(<condition>){
+    statements...
+   }
+```
+##### if-else statement
+```
+if(<condition>){
+ statements...
+}else{
+ statements....
+}
+```
+##### if-else ladder
+```
+if(<condition>){
+ statements...
+}else if(<condition>){
+ statements....
+}else if(<condition>){
+ statements..
+}else{
+ statements....
+```
+*Note: Use Ternary operator instead of if-else statements i.e., <condition> ? <true case> : <false case>*
+#### Scala Pattern Matching:
+```
+variable match {
+case => 
+}
+```
