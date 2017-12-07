@@ -267,7 +267,7 @@ variables + methods
 * In scala, when you have a class with same name as singleton object, it is called companion class and the singleton object is called companion object.
 * Both the companion class and its companion object both must be defined in the same source file.
 ```
-sample.scala
+Hello.scala
 
 object Hello {
  def main(args:Array[String]){
@@ -281,4 +281,38 @@ class Hello {
   println("Hello")
  }
 }
+```
+### Scala Case class and Case Object
+* Scala case classes are just regular classes which are immutable by default and decomposable through pattern matching.
+* Scala case class uses equal method to compare instance structurally. 
+* Case class does not use new keyword to instantiate object.
+* All the parameters listed in the case class are public and immutable by default.
+
+```
+case class Person(name:String, age:Int)
+
+object PersonExample {
+ def main(args:Array[String]){
+  val person = Person("Naga", 30)
+  println(person.name)
+  println(person.age)
+ }
+}
+```
+### Scala case class and pattern matching:
+```
+abstract class Notify
+case class Email(from:String, to:String, message:String) extends Notify
+case class SMS(to:String, message:String) extends Notify
+case class Alert(message:String) extends Notify
+
+def sendNotification(notification:Notify) : Unit = notification match{
+    case Email(from, to, title) => println("You got a mail")
+    case SMS(to, msg) => println("You got an SMS")
+    case Alert(msg) => println("You got an Alert")
+    case _ => println("No Event")
+}
+
+val email = Email("abc@gmail.com", "xyz@gmail.com", "HI How are you?")
+sendNotification(email)
 ```
