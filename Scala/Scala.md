@@ -129,8 +129,12 @@ if(<condition>){
 ```
 *Note: Use Ternary operator instead of if-else statements i.e., ```<condition> ? <true case> : <false case>```*
 #### Scala Pattern Matching:
+* Scala pattern matching is alternative to switch statement.
 ```
 variable match {
-case => 
+case 1 => statements
+case 2 => statements
+case 3 => statements
+case _ => statements
 }
 ```
