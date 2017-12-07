@@ -165,3 +165,13 @@ for(i <- ScalaCollection){
  statements...
 }
 ```
+
+*********************
+## Scala Comments
+* Scala supports thre types of comments
+  * Single line ```//```
+  * Multi line ```/*....*/```
+  * Documentation ```/** **** */
+  
+***************
+## Scala Functions
