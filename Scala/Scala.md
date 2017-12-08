@@ -316,3 +316,61 @@ def sendNotification(notification:Notify) : Unit = notification match{
 val email = Email("abc@gmail.com", "xyz@gmail.com", "HI How are you?")
 sendNotification(email)
 ```
+### Scala Constructors:
+* Scala provides primary and auxiliary constructors.
+#### Scala default primary constructor:
+* This is the default constructor, no need to specify the default primary constructor.
+```
+class Employee{
+ println("Employee...")
+}
+
+object Emp{
+  def main(args:Array[String]){
+   val emp = new Employee()
+  }
+}
+```
+#### Scala primary constructor:
+* Scala allows to define primary constructor with zero or more parameters with definition of the class.
+```
+class Employee(name:String, age:Int){
+ def getName(): String = {
+  (name)
+ }
+ def getAge(): Int = {
+  (age)
+ }
+}
+```
+#### Scala Secondary or auxiliary Constructor:
+* We can create any number of auxiliary constructors in a class.
+* We must call primary constructor from inside the auxiliary constructor.
+* this keyword is used to call constructor from other constructor.
+```
+class Employee(name:String, age:Int){
+ var place = ""
+ def this(name:String, age:Int, place:String){
+     this(name, age)
+     this.place = place
+ }
+ def getName(): String = {
+  (name)
+ }
+ def getAge(): Int = {
+  (age)
+ }
+ def getPlace():String = {
+     (place)
+ }
+}
+
+object Emp {
+def main(args:Array[String]){
+val emp = new Employee("Naga", 30)
+val employee = new Employee("Ravi", 33, "Mysore")
+println(emp.getName())
+println(employee.getPlace())
+}
+}
+```
