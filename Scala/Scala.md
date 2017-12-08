@@ -374,3 +374,47 @@ println(employee.getPlace())
 }
 }
 ```
+### Scala Method Overloading
+* Scala offers method overloading
+```
+class Maths{
+ def add(a:Int, b:Int) : Int = {
+  (a + b)
+ }
+ def add(a:Int, b:Int, c:Int) :Int = {
+  (a + b + c)
+ }
+}
+```
+## scala this keyword:
+* this is a keyword and used to refer current object.
+```
+class Employee{
+    var name = ""
+    var age = 0
+    var place = ""
+    def this(name:String, age:Int, place:String){
+        this()
+        this.name = name
+        this.age = age
+        this.place = place
+    }
+}
+```
+## Scala Inheritance
+* Inheritance is an object oriented concept which is used to reusability of code. 
+* We can achieve inheritance by using extends keyword.
+
+```
+class Programmer extends Employee{
+ //Write code....
+}
+class Employee{
+  var name = ""
+  var age = 0
+}
+
+class Programmer extends Employee {
+ var bonus = 0.0
+}
+```
