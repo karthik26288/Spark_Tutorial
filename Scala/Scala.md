@@ -457,4 +457,207 @@ programmer.message()
 * In Scala, final is a keyword, which is used to prevent inheritance of super class members into derived class.
 * We can declare final variables, methods and classes also.
 
+## Scala Abstract Class:
+* Scala class which is declared with abstract keyword is known as abstract class.
+* An abstract class can have abstract methods and non-abstract methods as well.
+* Abstract class is used to achieve abstraction.
+* Abstraction is a process in which we hide complex implementation details and show only functionality to the user.
+* In scala, we can achieve abstraction by using abstract class and trait.
+
+```
+abstract class Employee{
+    def getName() : String
+    def getAge() :Int
+}
+
+class Manager(name:String, age:Int) extends Employee {
+    def getName() : String = {
+        (name)
+    }
+    def getAge() : Int = {
+       (age)
+    }
+}
+
+val manager = new Manager("Arjun", 35)
+println(manager.getName)
+println(manager.getAge)
+```
+## Scala Trait
+* Scala trait is like an interface with a partial implementation. 
+* Scala trait is a collection of abstract and non-abstract methods.
+```
+trait Shape{
+    def area(x:Double) : Double
+}
+
+class Square extends Shape {
+    def area(x:Double) : Double = {
+        (x * x)
+    }
+}
+
+val square = new Square()
+val aread = square.area(10.0)
+
+MixIns:
+
+trait Shape{
+    def area(x:Double, y:Double) : Double
+}
+
+trait Printable{
+    def printShape(shape:String)
+}
+
+class Rectangle extends Shape with Printable{
+    def printShape(shape:String) {
+        println("The shape type is: " + shape)
+    }
+    def area(x:Double, y:Double) : Double = {
+        (x * y)
+    }
+}
+
+val rectangle = new Rectangle()
+rectangle.printShape("Rectangle")
+val area = rectangle.area(10.0, 20.0)
+println("Area of rectangle is: " + area)
+
+``` 
 ***********************
+## Scala Arrays:
+* Scala array is a collection of mutable values.
+* Index starts from 0 and last index is n-1
+* Scala arrays are generic i.e., Array[T]
+* Scala arrays are compatiable with Scala Sequences
+* Scala supports two types of arrays:
+  * One dimensional
+  * Multi dimensional
+### One Dimensional Array:
+```
+val varName:Array[arrayType] = new Array[arrayType](arraySize)
+val varName = new Array[arrayType](arraySize)
+val varName:Array[arrayType] = new Array(arraySize)
+val varName = Array(e1,e2,e3,....eN)
+
+val names = Array("Naga", "Ravi", "Kiran")
+val numbers = new Array[Int](10)
+
+for(i <- 0 until 10){
+    numbers(i) = i
+}
+
+for(num <- numbers){
+    println(num)
+}
+
+```
+### Multi Dimensional Array:
+```
+var arrayName = Array.ofDim[ArrayType](r,c)   //r = rows, c = columns
+var arrayName = Array(Array(e1,e2...eN), Array(e1, e2, ....eN))
+
+val matrix = Array.ofDim[Int](2,2)
+matrix(0)(0) = 1
+matrix(0)(1) = 2
+matrix(1)(0) = 3
+matrix(1)(1) = 4
+
+println(matrix(1)(1))
+
+val persons = Array(Array("Naga", "Ravi"), Array(30, 33))
+println(persons(0)(0))
+println(persons(0)(1))
+println(persons(1)(0))
+```
+**********************
+## Scala Strings:
+* In Scala, string is a combination of characters or we can say it is a sequence of characters.
+* Strings are immutable
+* We can manipulate string and can apply method to get desire results.
+* We can't change original string object.
+```
+val firstName = "Arjun"
+val surName = "A"
+val name = firstName + " " + surName
+val fullName = firstName.concat(surName)
+println(name)
+println(fullName)
+
+String Comparision:
+
+val name = "Naga"
+val name1 = "Naga"
+if(name == name1){
+    println("Equal")
+}else{
+    println("Not Equal")
+}
+
+String Interpolation:
+
+val name = "Naga"
+println("Name: " + name)
+println(s"Name: $name")
+
+var message = raw"naga\t30\tbangalore\n"
+println(message)
+```
+***********************
+## Scala Exceptiona Handling:
+* Exception handling is a mechanism which is used to handle abnormal conditions.
+* We can avoid termination of your program unexpectedly.
+* Scala doesn't have checked exceptions.
+* All Exceptions are unchecked exceptions.
+```
+class Maths{
+    def divide(nums:Array[Int]){
+          for(num <- nums){
+            try{
+            val division = 100 / num
+            println(division)
+            }catch{
+            case ae:ArithmeticException => println(ae.getMessage())
+            case e:Exception => println(e.getMessage())
+            }
+            finally{  
+            println("Finaly block always executes")  
+        }  
+        }   
+    }
+}
+
+val math = new Maths()
+val numbers = Array(1,2,3,4,5,0,6,7,8,9)
+math.divide(numbers)
+
+Scala throw keyword: The throw keyword mainly used to throw custom exception.
+
+class Vote{
+    def validate(age:Int){
+        if(age <= 18){
+            throw new ArithmeticException("You are not eligible for voting!")
+        }else{
+            println("You are eligible for voting!")
+        }
+    }
+}
+
+val vote = new Vote()
+vote.validate(12)
+
+Scala throws Keyword: We can declare exception with method definition using throws keyword.
+
+class StrToNum{
+    @throws(classOf[NumberFormatException])
+    def strToNum(number:String){
+        val num:Int = number.toInt
+        println(num)
+    }
+}
+val sn = new StrToNum()
+sn.strToNum("ABC")
+
+```
+*******************
