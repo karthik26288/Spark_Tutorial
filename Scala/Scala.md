@@ -418,3 +418,43 @@ class Programmer extends Employee {
  var bonus = 0.0
 }
 ```
+## Scala Method Overriding
+* If subclass has the same name method as defined in the parent class, it is known as method overriding
+```
+class Employee{
+  def message(){
+  }
+}
+
+class Programmer extends Employee {
+ override def message(){
+  println("You are a Programmer")
+ }
+}
+```
+## Scala Field Overriding:
+*  mutable variable cannot be override, only immutable variables are overridden
+```
+class Employee{
+    val age = 30
+    def message(){
+        
+    }
+}
+
+class Programmer extends Employee{
+    override val age = 40
+    override def message(){
+        println("You are Programmer")
+    }
+}
+
+val programmer = new Programmer()
+println(programmer.age)
+programmer.message()
+```
+## Scala final keyword:
+* In Scala, final is a keyword, which is used to prevent inheritance of super class members into derived class.
+* We can declare final variables, methods and classes also.
+
+***********************
