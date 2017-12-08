@@ -661,3 +661,62 @@ sn.strToNum("ABC")
 
 ```
 *******************
+## Scala Collections:
+* Scala provides a rich set of collections library.
+* Scala collection library contains Classes and traits.
+* Scala collection library contains both mutable and immutable collections.
+  * scala.collection.mutable
+  * scala.collection.immutable
+* Traversab le is a base trait in scala immutable collection library.
+* Traversable is used to traverse collection elements.
+* Scala Iterable is a trait for iterable collections.
+#### Set:
+* Used to store unique elements in the set.
+* It does not maintain any order for storing elements.
+```
+val names:Set[Type] = Set(e1,e2,....eN)
+val names = Set(e1,e2,....eN)
+
+val names = Set("naga", "ravi", "hari")
+
+//merge two sets
+val names = Set("naga", "ravi", "hari", "ravi")
+val names1 = Set("kiran", "kishore", "ashok", "amit")
+val namesList = names ++ names1
+namesList
+
+//Adding and removing elements
+var names = Set("naga", "ravi", "hari", "ravi")
+println(names)
+names += "siva"
+println(names)
+names -= "ravi"
+println(names)
+
+//Iterating over sets
+for(name <- names){
+    println(name)
+}
+
+names.foreach(item => println(item))
+
+//set operations
+val A = Set("a", "b", "c", "d")
+val B = Set("c", "d", "e", "f")
+
+val intersection = A.intersect(B)
+val union = A.union(B)
+println(intersection)
+println(union)
+```
+#### SortedSet:
+* set values are sorted in Order.
+```
+val varname:SortedSet[Type] = SortedSet(e1, e3, e2, ..., eN)
+val varname = SortedSet(e1, e3, e2, ..., eN)
+
+import scala.collection.immutable.SortedSet
+
+val numbers = SortedSet(2,4,3,1,6,5,7,9,8)
+println(numbers)
+```
