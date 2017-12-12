@@ -11,7 +11,7 @@ In case of Redhat and CentOS use yum in place of apt
 ```
 
 ## Installing Scala Notebook:
-* Donwload jupyter scala plugin: git@github.com:jupyter-scala/jupyter-scala.git
+* Donwload jupyter scala plugin: https://github.com/jupyter-scala/jupyter-scala -- git@github.com:jupyter-scala/jupyter-scala.git
 * Run the jupyter-scala script of this repository to install the kernel
 * Run jupyter notebook
 * Open the web interface: http:<hostname>:8888/
