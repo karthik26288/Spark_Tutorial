@@ -1,1612 +1,4855 @@
+<div tabindex="-1" id="notebook" class="border-box-sizing">
 
+<div class="container" id="notebook-container">
 
-```scala211
-//Scala Control Structures
-val age = 16
+<div class="cell border-box-sizing code_cell rendered">
 
-if( age > 18){
-    println("Allowed to Vote!")
-}else{
-    println("Not Allowed to Vote")
-}
-```
+<div class="input">
 
-    Not Allowed to Vote
+<div class="prompt input_prompt">In [3]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="c1">//Scala Control Structures</span>
+<span class="k">val</span> <span class="n">age</span> <span class="k">=</span> <span class="mi">16</span>
 
-    [36mage[39m: [32mInt[39m = [32m16[39m
+<span class="k">if</span><span class="o">(</span> <span class="n">age</span> <span class="o">></span> <span class="mi">18</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Allowed to Vote!"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Not Allowed to Vote"</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-val age = 45
-if(age <= 16){
-    println("Younger")
-}else if(age > 16 && age <=40){
-    println("Middle Age")
-}else{
-    println("Older")
-}
-```
+</div>
 
-    Older
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>Not Allowed to Vote
+</pre>
 
-    [36mage[39m: [32mInt[39m = [32m45[39m
+</div>
 
+</div>
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[3]:</div>
 
-```scala211
-val age:Int = 30
-val younger = "Younger"
-val old = "Old"
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">age</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">16</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [6]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">age</span> <span class="k">=</span> <span class="mi">45</span>
+<span class="k">if</span><span class="o">(</span><span class="n">age</span> <span class="o"><=</span> <span class="mi">16</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Younger"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">age</span> <span class="o">></span> <span class="mi">16</span> <span class="o">&&</span> <span class="n">age</span> <span class="o"><=</span><span class="mi">40</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Middle Age"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Older"</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Older
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">age</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">45</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [6]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="k">val</span> <span class="n">younger</span> <span class="k">=</span> <span class="s">"Younger"</span>
+<span class="k">val</span> <span class="n">old</span> <span class="k">=</span> <span class="s">"Old"</span>
+<span class="k">val</span> <span class="n">ageGroup</span> <span class="k">=</span> <span class="n">age</span> <span class="o">==</span> <span class="mi">35</span> <span class="o">?</span> <span class="n">old</span> <span class="k">:</span> <span class="kt">younger</span>
+<span class="n">println</span><span class="o">(</span><span class="n">ageGroup</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+
+<pre>cmd6.sc:4: not found: type younger
 val ageGroup = age == 35 ? old : younger
-println(ageGroup)
-```
+                                 ^cmd6.sc:4: value ? is not a member of Int
+val ageGroup = age == 35 ? old : younger
+                         ^</pre>
 
-    cmd6.sc:4: not found: type younger
-    val ageGroup = age == 35 ? old : younger
-                                     ^cmd6.sc:4: value ? is not a member of Int
-    val ageGroup = age == 35 ? old : younger
-                             ^
+</div>
 
+</div>
 
-    Compilation Failed
+<div class="output_area">
 
+<div class="output_subarea output_text output_error">
 
+<pre>Compilation Failed</pre>
 
-```scala211
-val marks = 50
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mmarks[39m: [32mInt[39m = [32m50[39m
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [7]:</div>
 
-```scala211
-if(marks == 35){
-    println("Pass")
-}else if(marks >35 && marks <= 60){
-    println("Second Class")
-}else if(marks > 60 && marks <= 70){
-    println("First Class")
-}else if(marks > 70){
-    println("Distinction")
-}else{
-    println("Fail")
-}
-```
+<div class="inner_cell">
 
-    Second Class
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">val</span> <span class="n">marks</span> <span class="k">=</span> <span class="mi">50</span>
+</pre>
 
-```scala211
-val marks = 50
+</div>
 
-val pass = 35
-val second = 
+</div>
 
-val result = marks match{
-    case  pass => ("Pass")
-    case  50 => ("Second Class")
-    case  60 => ("First Class")
-    case  70 => ("Distinction")
-    case  _ =>  ("Fail")
-}
-```
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
-    [36mmarks[39m: [32mInt[39m = [32m50[39m
-    [36mresult[39m: [32mString[39m = [32m"Second Class"[39m
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[7]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">marks</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">50</span></pre>
 
-```scala211
-var a = 0
-while(a  <= 10){
-    println(a)
-    a = a + 1
-}
-```
+</div>
 
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
+</div>
 
+</div>
 
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
-    [36ma[39m: [32mInt[39m = [32m11[39m
+<div class="input">
 
+<div class="prompt input_prompt">In [9]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
-```scala211
-a = 10
-do{
-    println(a)
-    a = a + 1
-}while(a < 12)
-```
+<div class=" highlight hl-scala">
 
-    10
-    11
+<pre><span></span><span class="k">if</span><span class="o">(</span><span class="n">marks</span> <span class="o">==</span> <span class="mi">35</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Pass"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">marks</span> <span class="o">></span><span class="mi">35</span> <span class="o">&&</span> <span class="n">marks</span> <span class="o"><=</span> <span class="mi">60</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Second Class"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">marks</span> <span class="o">></span> <span class="mi">60</span> <span class="o">&&</span> <span class="n">marks</span> <span class="o"><=</span> <span class="mi">70</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"First Class"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">marks</span> <span class="o">></span> <span class="mi">70</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Distinction"</span><span class="o">)</span>
+<span class="o">}</span><span class="k">else</span><span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Fail"</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
-```scala211
-val names = List("ravi", "hari", "siva")
-for(name <- names){
-    println(name)
-}
-```
+</div>
 
-    ravi
-    hari
-    siva
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
-    [36mnames[39m: [32mList[39m[[32mString[39m] = [33mList[39m([32m"ravi"[39m, [32m"hari"[39m, [32m"siva"[39m)
+<pre>Second Class
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-val names = Set("ravi", "hari", "siva")
-for(name <- names){
-    println(name)
-}
-```
+</div>
 
-    ravi
-    hari
-    siva
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [17]:</div>
 
+<div class="inner_cell">
 
-    [36mnames[39m: [32mSet[39m[[32mString[39m] = [33mSet[39m([32m"ravi"[39m, [32m"hari"[39m, [32m"siva"[39m)
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">val</span> <span class="n">marks</span> <span class="k">=</span> <span class="mi">50</span>
 
+<span class="k">val</span> <span class="n">pass</span> <span class="k">=</span> <span class="mi">35</span>
+<span class="k">val</span> <span class="n">second</span> <span class="k">=</span> 
 
-```scala211
-for(i <- 0 to 10){
-    println(i)
-}
-```
+<span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">marks</span> <span class="k">match</span><span class="o">{</span>
+    <span class="k">case</span>  <span class="n">pass</span> <span class="k">=></span> <span class="o">(</span><span class="s">"Pass"</span><span class="o">)</span>
+    <span class="k">case</span>  <span class="mi">50</span> <span class="k">=></span> <span class="o">(</span><span class="s">"Second Class"</span><span class="o">)</span>
+    <span class="k">case</span>  <span class="mi">60</span> <span class="k">=></span> <span class="o">(</span><span class="s">"First Class"</span><span class="o">)</span>
+    <span class="k">case</span>  <span class="mi">70</span> <span class="k">=></span> <span class="o">(</span><span class="s">"Distinction"</span><span class="o">)</span>
+    <span class="k">case</span>  <span class="k">_</span> <span class="k">=></span>  <span class="o">(</span><span class="s">"Fail"</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
+</div>
 
+</div>
 
+</div>
 
-```scala211
-for(i <- 0 until 10){
-    println(i)
-}
-```
+</div>
 
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-```scala211
-val numbers = Array(1,2,3,4,5,6)
-for(i <- numbers){
-    println(i)
-}
-```
+<div class="prompt output_prompt">Out[17]:</div>
 
-    1
-    2
-    3
-    4
-    5
-    6
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">marks</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">50</span>
+<span class="ansi-cyan-fg">result</span>: <span class="ansi-green-fg">String</span> = <span class="ansi-green-fg">"Second Class"</span></pre>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mnumbers[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m4[39m, [32m5[39m, [32m6[39m)
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-numbers.foreach(println)
-```
+<div class="prompt input_prompt">In [18]:</div>
 
-    1
-    2
-    3
-    4
-    5
-    6
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-```scala211
-numbers.foreach(num => println(num))
-```
+<pre><span></span><span class="k">var</span> <span class="n">a</span> <span class="k">=</span> <span class="mi">0</span>
+<span class="k">while</span><span class="o">(</span><span class="n">a</span>  <span class="o"><=</span> <span class="mi">10</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+    <span class="n">a</span> <span class="k">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="o">}</span>
+</pre>
 
-    1
-    2
-    3
-    4
-    5
-    6
+</div>
 
+</div>
 
+</div>
 
-```scala211
-names.foreach(println)
-```
+</div>
 
-    ravi
-    hari
-    siva
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-```scala211
-for(i <- 0 to 10 if i % 2 == 0){
-    println(i)
-}
-```
+<div class="output_subarea output_stream output_stdout output_text">
 
-    0
-    2
-    4
-    6
-    8
-    10
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
 
+</div>
 
+</div>
 
-```scala211
-val even = for(i <- 0 to 10 if i % 2 == 0) yield i
-even
-```
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[18]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">a</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">11</span></pre>
 
-    [36meven[39m: [32mcollection[39m.[32mimmutable[39m.[32mIndexedSeq[39m[[32mInt[39m] = [33mVector[39m([32m0[39m, [32m2[39m, [32m4[39m, [32m6[39m, [32m8[39m, [32m10[39m)
-    [36mres31_1[39m: [32mcollection[39m.[32mimmutable[39m.[32mIndexedSeq[39m[[32mInt[39m] = [33mVector[39m([32m0[39m, [32m2[39m, [32m4[39m, [32m6[39m, [32m8[39m, [32m10[39m)
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-for(i <- 0 to 10 by 3){
-    println(i)
-}
-```
+</div>
 
-    0
-    3
-    6
-    9
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [22]:</div>
 
-```scala211
-//Scala Functions
-```
+<div class="inner_cell">
 
+<div class="input_area">
 
-```scala211
-def add(a:Int, b:Int) : Int = {
-   (a + b)
-}
+<div class=" highlight hl-scala">
 
-val sum = add(10, 20)
-```
+<pre><span></span><span class="n">a</span> <span class="k">=</span> <span class="mi">10</span>
+<span class="k">do</span><span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">a</span><span class="o">)</span>
+    <span class="n">a</span> <span class="k">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="o">}</span><span class="k">while</span><span class="o">(</span><span class="n">a</span> <span class="o"><</span> <span class="mi">12</span><span class="o">)</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36madd[39m
-    [36msum[39m: [32mInt[39m = [32m30[39m
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-```scala211
-def hai() : Unit = {
-    println("Hai")
-}
-hai()
-```
+<div class="output_subarea output_stream output_stdout output_text">
 
-    Hai
+<pre>10
+11
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36mhai[39m
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [23]:</div>
 
-```scala211
-def hai(message:String) : Unit = {
-    println(message)
-}
-hai("Scala")
-```
+<div class="inner_cell">
 
-    Scala
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="s">"ravi"</span><span class="o">,</span> <span class="s">"hari"</span><span class="o">,</span> <span class="s">"siva"</span><span class="o">)</span>
+<span class="k">for</span><span class="o">(</span><span class="n">name</span> <span class="k"><-</span> <span class="n">names</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36mhai[39m
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
-```scala211
-def getNumbers() : Array[Int] = {
-    val numbers = Array(1,2,3,4)
-    (numbers)
-}
-getNumbers()
-```
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>ravi
+hari
+siva
+</pre>
 
+</div>
 
-    defined [32mfunction[39m [36mgetNumbers[39m
-    [36mres40_1[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m4[39m)
+</div>
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[23]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
-```scala211
-val inc = (x:Int) => x + 1
-inc(20)
-```
+<pre><span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">"ravi"</span>, <span class="ansi-green-fg">"hari"</span>, <span class="ansi-green-fg">"siva"</span>)</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    [36minc[39m: [32mInt[39m => [32mInt[39m = <function1>
-    [36mres42_1[39m: [32mInt[39m = [32m21[39m
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-def inc(x:Int) : Int = {
-    (x + 1)
-}
-```
+<div class="prompt input_prompt">In [24]:</div>
 
+<div class="inner_cell">
 
-```scala211
-def subAndAdd(a:Int, b:Int, f:(Int, Int) => Int) : Int = {
-    val sum = f(a, b)
-    val sub = b - a
-    val total = sum + sub
-    (total)
-}
-val total = subAndAdd(30, 40, add)
-```
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="nc">Set</span><span class="o">(</span><span class="s">"ravi"</span><span class="o">,</span> <span class="s">"hari"</span><span class="o">,</span> <span class="s">"siva"</span><span class="o">)</span>
+<span class="k">for</span><span class="o">(</span><span class="n">name</span> <span class="k"><-</span> <span class="n">names</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
-    defined [32mfunction[39m [36msubAndAdd[39m
-    [36mtotal[39m: [32mInt[39m = [32m80[39m
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-def add(a:Int=10, b:Int=20) : Int = {
-    println(s"a: $a")
-    println(s"b: $b")
-    (a + b)
-}
-add()
-add(30, 40)
-add(b=40, a=20)
-```
+<div class="output">
 
-    a: 10
-    b: 20
-    a: 30
-    b: 40
-    a: 20
-    b: 40
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>ravi
+hari
+siva
+</pre>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36madd[39m
-    [36mres46_1[39m: [32mInt[39m = [32m30[39m
-    [36mres46_2[39m: [32mInt[39m = [32m70[39m
-    [36mres46_3[39m: [32mInt[39m = [32m60[39m
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[24]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">Set</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">Set</span>(<span class="ansi-green-fg">"ravi"</span>, <span class="ansi-green-fg">"hari"</span>, <span class="ansi-green-fg">"siva"</span>)</pre>
 
-```scala211
-def sum(nums:Int*) : Int = {
-    var s = 0
-    for(num <- nums){
-        s = s + num
-    }
-    (s)
-}
+</div>
 
-val result = sum(1,2,3,4,5)
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36msum[39m
-    [36mresult[39m: [32mInt[39m = [32m15[39m
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [25]:</div>
 
+<div class="inner_cell">
 
-```scala211
-def add(a:Int, b:Int) : Int = {
-    (a + b)
-}
-add(10, 20)
-```
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">10</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">i</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
-    defined [32mfunction[39m [36madd[39m
-    [36mres49_1[39m: [32mInt[39m = [32m30[39m
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-// add(a, b)
-// g(b) = add(10, b)
+<div class="output">
 
+<div class="output_area">
 
-def add(a:Int)(b:Int) : Int = {
-    (a + b)
-}
+<div class="output_subarea output_stream output_stdout output_text">
 
-val adding = add(10)_
-adding(40)
-```
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36madd[39m
-    [36madding[39m: [32mInt[39m => [32mInt[39m = <function1>
-    [36mres53_2[39m: [32mInt[39m = [32m50[39m
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-def fact(n:Int): Int = {
-    if(n < 1){
-        return 1
-    }else{
-        return n * fact(n - 1)
-    }
-}
+<div class="prompt input_prompt">In [26]:</div>
 
-val result = fact(6)
-```
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="mi">0</span> <span class="n">until</span> <span class="mi">10</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">i</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
-    defined [32mfunction[39m [36mfact[39m
-    [36mresult[39m: [32mInt[39m = [32m720[39m
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-import scala.collection.mutable.ListBuffer
+<div class="output_wrapper">
 
-val numbers = Array(1,2,3,4,5)
-var squares:ListBuffer[Int] = ListBuffer()
-for(i <- numbers){
-    squares += i * i
-}
-squares
+<div class="output">
 
-val sqrs = for(i <- numbers) yield i * i
-sqrs
-```
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre>
 
+</div>
 
-    [32mimport [39m[36mscala.collection.mutable.ListBuffer
-    
-    [39m
-    [36mnumbers[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m4[39m, [32m5[39m)
-    [36msquares[39m: [32mListBuffer[39m[[32mInt[39m] = [33mListBuffer[39m([32m1[39m, [32m4[39m, [32m9[39m, [32m16[39m, [32m25[39m)
-    [36mres57_4[39m: [32mListBuffer[39m[[32mInt[39m] = [33mListBuffer[39m([32m1[39m, [32m4[39m, [32m9[39m, [32m16[39m, [32m25[39m)
-    [36msqrs[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m4[39m, [32m9[39m, [32m16[39m, [32m25[39m)
-    [36mres57_6[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m4[39m, [32m9[39m, [32m16[39m, [32m25[39m)
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-//Scala Classes and Objects
-```
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-class Person{
-    var name = "ABC"
-    var age = 30
-}
-```
+<div class="prompt input_prompt">In [27]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-    defined [32mclass[39m [36mPerson[39m
+<pre><span></span><span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">)</span>
+<span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="n">numbers</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">i</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-object PersonExample{
-    def main(args:Array[String]) : Unit = {
-         val person = new Person()
-    println(person.name)
-    println(person.age)
-    }
-}
-```
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-    defined [32mobject[39m [36mPersonExample[39m
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>1
+2
+3
+4
+5
+6
+</pre>
 
+</div>
 
+</div>
 
-```scala211
-   val person = new Person
-    println(person.name)
-    println(person.age)
-```
+<div class="output_area">
 
-    ABC
-    30
+<div class="prompt output_prompt">Out[27]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">numbers</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">5</span>, <span class="ansi-green-fg">6</span>)</pre>
 
+</div>
 
+</div>
 
-    [36mperson[39m: [32mPerson[39m = $sess.cmd58Wrapper$Helper$Person@38282e55
+</div>
 
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
-```scala211
-class Employee(name:String, age:Int){
-    def show(){
-    println(this.name)
-    println(this.age)
-    }
-}
+<div class="input">
 
-val emp = new Employee("Hari", 34)
-emp.show()
-```
+<div class="prompt input_prompt">In [28]:</div>
 
-    Hari
-    34
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">numbers</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">println</span><span class="o">)</span>
+</pre>
 
+</div>
 
-    defined [32mclass[39m [36mEmployee[39m
-    [36memp[39m: [32mEmployee[39m = $sess.cmd61Wrapper$Helper$Employee@6fed2d0c
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-case class Person(name:String, age:Int)
+<div class="output">
 
-val person = Person("Hari", 40)
-println(person.name)
-println(person.age)
+<div class="output_area">
 
-```
+<div class="output_subarea output_stream output_stdout output_text">
 
-    Hari
-    40
+<pre>1
+2
+3
+4
+5
+6
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mclass[39m [36mPerson[39m
-    [36mperson[39m: [32mwrapper[39m.[32mwrapper[39m.[32mPerson[39m = [33mPerson[39m([32m"Hari"[39m, [32m40[39m)
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [29]:</div>
 
-```scala211
-class Employee(name:String, age:Int){
-    var place = "NA"
-    def this(name:String, age:Int, place:String){
-        this(name, age)
-        this.place = place
-    }
-    def show(){
-    println(this.name)
-    println(this.age)
-    println(this.place)
-    }
-}
+<div class="inner_cell">
 
-val emp = new Employee("Hari", 34, "Mysore")
-val emp1 = new Employee("Hari", 34)
-emp.show()
-emp1.show()
-```
+<div class="input_area">
 
-    Hari
-    34
-    Mysore
-    Hari
-    34
-    NA
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">numbers</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">num</span> <span class="k">=></span> <span class="n">println</span><span class="o">(</span><span class="n">num</span><span class="o">))</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mclass[39m [36mEmployee[39m
-    [36memp[39m: [32mwrapper[39m.[32mwrapper[39m.[32mEmployee[39m = $sess.cmd64Wrapper$Helper$Employee@2dff6788
-    [36memp1[39m: [32mwrapper[39m.[32mwrapper[39m.[32mEmployee[39m = $sess.cmd64Wrapper$Helper$Employee@783477be
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-```scala211
-class Maths{
-    def add(a:Int, b:Int) : Int ={
-        (a + b)
-    }
-    def add(a:Int, b:Int, c:Int) = {
-        (a + b + c)
-    }
-}
+<div class="output_subarea output_stream output_stdout output_text">
 
-val math = new Maths()
-println(math.add(10, 10))
-println(math.add(10, 20, 30))
-```
+<pre>1
+2
+3
+4
+5
+6
+</pre>
 
-    20
-    60
+</div>
 
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mclass[39m [36mMaths[39m
-    [36mmath[39m: [32mMaths[39m = $sess.cmd65Wrapper$Helper$Maths@6c1f42e7
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [30]:</div>
 
+<div class="inner_cell">
 
-```scala211
-class Human{
-    val name = "NA"
-    def message(){
-        println("Human")
-    }
-}
-```
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">names</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">println</span><span class="o">)</span>
+</pre>
 
+</div>
 
-    defined [32mclass[39m [36mHuman[39m
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-class Male extends Human {
-    override val name = "ABC"
-    override def message(){
-        println("Male")
-        println(this.name)
-    }
-}
+<div class="output">
 
-```
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>ravi
+hari
+siva
+</pre>
 
+</div>
 
-    defined [32mclass[39m [36mMale[39m
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-val male = new Male()
-male.message()
-```
+<div class="cell border-box-sizing code_cell rendered">
 
-    Male
-    ABC
+<div class="input">
 
+<div class="prompt input_prompt">In [31]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-    [36mmale[39m: [32mMale[39m = $sess.cmd72Wrapper$Helper$Male@27824ee5
+<pre><span></span><span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">10</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">i</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-abstract class Human{
-    def getName():String
-    def getAge():Int
-}
-```
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-    defined [32mclass[39m [36mHuman[39m
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>0
+2
+4
+6
+8
+10
+</pre>
 
+</div>
 
+</div>
 
-```scala211
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [32]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">even</span> <span class="k">=</span> <span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">10</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="k">yield</span> <span class="n">i</span>
+<span class="n">even</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[32]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">even</span>: <span class="ansi-green-fg">collection</span>.<span class="ansi-green-fg">immutable</span>.<span class="ansi-green-fg">IndexedSeq</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Vector</span>(<span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">6</span>, <span class="ansi-green-fg">8</span>, <span class="ansi-green-fg">10</span>)
+<span class="ansi-cyan-fg">res31_1</span>: <span class="ansi-green-fg">collection</span>.<span class="ansi-green-fg">immutable</span>.<span class="ansi-green-fg">IndexedSeq</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Vector</span>(<span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">6</span>, <span class="ansi-green-fg">8</span>, <span class="ansi-green-fg">10</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [33]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">10</span> <span class="n">by</span> <span class="mi">3</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">i</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>0
+3
+6
+9
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [ ]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="c1">//Scala Functions</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [37]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+   <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">sum</span> <span class="k">=</span> <span class="n">add</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">20</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[37]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">add</span>
+<span class="ansi-cyan-fg">sum</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">30</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [39]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">hai</span><span class="o">()</span> <span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">"Hai"</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="n">hai</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Hai
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[39]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">hai</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [40]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">hai</span><span class="o">(</span><span class="n">message</span><span class="k">:</span><span class="kt">String</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">message</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="n">hai</span><span class="o">(</span><span class="s">"Scala"</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Scala
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[40]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">hai</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [41]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">getNumbers</span><span class="o">()</span> <span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">)</span>
+    <span class="o">(</span><span class="n">numbers</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="n">getNumbers</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[41]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">getNumbers</span>
+<span class="ansi-cyan-fg">res40_1</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">4</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [43]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">inc</span> <span class="k">=</span> <span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">=></span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">inc</span><span class="o">(</span><span class="mi">20</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[43]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">inc</span>: <span class="ansi-green-fg">Int</span> => <span class="ansi-green-fg">Int</span> = <function1>
+<span class="ansi-cyan-fg">res42_1</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">21</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [ ]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">inc</span><span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="o">(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [44]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">subAndAdd</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">f</span><span class="k">:</span><span class="o">(</span><span class="kt">Int</span><span class="o">,</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">=></span> <span class="nc">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">sum</span> <span class="k">=</span> <span class="n">f</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">)</span>
+    <span class="k">val</span> <span class="n">sub</span> <span class="k">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">a</span>
+    <span class="k">val</span> <span class="n">total</span> <span class="k">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">sub</span>
+    <span class="o">(</span><span class="n">total</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="k">val</span> <span class="n">total</span> <span class="k">=</span> <span class="n">subAndAdd</span><span class="o">(</span><span class="mi">30</span><span class="o">,</span> <span class="mi">40</span><span class="o">,</span> <span class="n">add</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[44]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">subAndAdd</span>
+<span class="ansi-cyan-fg">total</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">80</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [47]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">=</span><span class="mi">10</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">=</span><span class="mi">20</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">s"a:</span> <span class="si">$a</span><span class="s">"</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="s">s"b:</span> <span class="si">$b</span><span class="s">"</span><span class="o">)</span>
+    <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="n">add</span><span class="o">()</span>
+<span class="n">add</span><span class="o">(</span><span class="mi">30</span><span class="o">,</span> <span class="mi">40</span><span class="o">)</span>
+<span class="n">add</span><span class="o">(</span><span class="n">b</span><span class="k">=</span><span class="mi">40</span><span class="o">,</span> <span class="n">a</span><span class="k">=</span><span class="mi">20</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>a: 10
+b: 20
+a: 30
+b: 40
+a: 20
+b: 40
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[47]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">add</span>
+<span class="ansi-cyan-fg">res46_1</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">30</span>
+<span class="ansi-cyan-fg">res46_2</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">70</span>
+<span class="ansi-cyan-fg">res46_3</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">60</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [49]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">sum</span><span class="o">(</span><span class="n">nums</span><span class="k">:</span><span class="kt">Int*</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">var</span> <span class="n">s</span> <span class="k">=</span> <span class="mi">0</span>
+    <span class="k">for</span><span class="o">(</span><span class="n">num</span> <span class="k"><-</span> <span class="n">nums</span><span class="o">){</span>
+        <span class="n">s</span> <span class="k">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">num</span>
+    <span class="o">}</span>
+    <span class="o">(</span><span class="n">s</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">sum</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">5</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[49]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">sum</span>
+<span class="ansi-cyan-fg">result</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">15</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [50]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="n">add</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">20</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[50]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">add</span>
+<span class="ansi-cyan-fg">res49_1</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">30</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [54]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="c1">// add(a, b)</span>
+<span class="c1">// g(b) = add(10, b)</span>
+
+<span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">)(</span><span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">adding</span> <span class="k">=</span> <span class="n">add</span><span class="o">(</span><span class="mi">10</span><span class="o">)</span><span class="k">_</span>
+<span class="n">adding</span><span class="o">(</span><span class="mi">40</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[54]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">add</span>
+<span class="ansi-cyan-fg">adding</span>: <span class="ansi-green-fg">Int</span> => <span class="ansi-green-fg">Int</span> = <function1>
+<span class="ansi-cyan-fg">res53_2</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">50</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [55]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">fact</span><span class="o">(</span><span class="n">n</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">n</span> <span class="o"><</span> <span class="mi">1</span><span class="o">){</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+        <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">fact</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">fact</span><span class="o">(</span><span class="mi">6</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[55]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">fact</span>
+<span class="ansi-cyan-fg">result</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">720</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [58]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">import</span> <span class="nn">scala.collection.mutable.ListBuffer</span>
+
+<span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">5</span><span class="o">)</span>
+<span class="k">var</span> <span class="n">squares</span><span class="k">:</span><span class="kt">ListBuffer</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="k">=</span> <span class="nc">ListBuffer</span><span class="o">()</span>
+<span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="n">numbers</span><span class="o">){</span>
+    <span class="n">squares</span> <span class="o">+=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span>
+<span class="o">}</span>
+<span class="n">squares</span>
+
+<span class="k">val</span> <span class="n">sqrs</span> <span class="k">=</span> <span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="n">numbers</span><span class="o">)</span> <span class="k">yield</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span>
+<span class="n">sqrs</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[58]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">scala.collection.mutable.ListBuffer</span> 
+<span class="ansi-cyan-fg">numbers</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">5</span>)
+<span class="ansi-cyan-fg">squares</span>: <span class="ansi-green-fg">ListBuffer</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">ListBuffer</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">9</span>, <span class="ansi-green-fg">16</span>, <span class="ansi-green-fg">25</span>)
+<span class="ansi-cyan-fg">res57_4</span>: <span class="ansi-green-fg">ListBuffer</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">ListBuffer</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">9</span>, <span class="ansi-green-fg">16</span>, <span class="ansi-green-fg">25</span>)
+<span class="ansi-cyan-fg">sqrs</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">9</span>, <span class="ansi-green-fg">16</span>, <span class="ansi-green-fg">25</span>)
+<span class="ansi-cyan-fg">res57_6</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">9</span>, <span class="ansi-green-fg">16</span>, <span class="ansi-green-fg">25</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [ ]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="c1">//Scala Classes and Objects</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [59]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="o">{</span>
+    <span class="k">var</span> <span class="n">name</span> <span class="k">=</span> <span class="s">"ABC"</span>
+    <span class="k">var</span> <span class="n">age</span> <span class="k">=</span> <span class="mi">30</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[59]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Person</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [60]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">object</span> <span class="nc">PersonExample</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span><span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+         <span class="k">val</span> <span class="n">person</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Person</span><span class="o">()</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[60]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">object</span> <span class="ansi-cyan-fg">PersonExample</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [61]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">person</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Person</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>ABC
+30
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[61]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">person</span>: <span class="ansi-green-fg">Person</span> = $sess.cmd58Wrapper$Helper$Person@38282e55</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [62]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">class</span> <span class="nc">Employee</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">){</span>
+    <span class="k">def</span> <span class="n">show</span><span class="o">(){</span>
+    <span class="n">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">emp</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Employee</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">,</span> <span class="mi">34</span><span class="o">)</span>
+<span class="n">emp</span><span class="o">.</span><span class="n">show</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Hari
+34
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[62]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Employee</span>
+<span class="ansi-cyan-fg">emp</span>: <span class="ansi-green-fg">Employee</span> = $sess.cmd61Wrapper$Helper$Employee@6fed2d0c</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [63]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">case</span> <span class="k">class</span> <span class="nc">Person</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span>
+
+<span class="k">val</span> <span class="n">person</span> <span class="k">=</span> <span class="nc">Person</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">,</span> <span class="mi">40</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Hari
+40
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[63]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Person</span>
+<span class="ansi-cyan-fg">person</span>: <span class="ansi-green-fg">wrapper</span>.<span class="ansi-green-fg">wrapper</span>.<span class="ansi-green-fg">Person</span> = <span class="ansi-yellow-fg">Person</span>(<span class="ansi-green-fg">"Hari"</span>, <span class="ansi-green-fg">40</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [65]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">class</span> <span class="nc">Employee</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">){</span>
+    <span class="k">var</span> <span class="n">place</span> <span class="k">=</span> <span class="s">"NA"</span>
+    <span class="k">def</span> <span class="k">this</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">place</span><span class="k">:</span><span class="kt">String</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">(</span><span class="n">name</span><span class="o">,</span> <span class="n">age</span><span class="o">)</span>
+        <span class="k">this</span><span class="o">.</span><span class="n">place</span> <span class="k">=</span> <span class="n">place</span>
+    <span class="o">}</span>
+    <span class="k">def</span> <span class="n">show</span><span class="o">(){</span>
+    <span class="n">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">place</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">emp</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Employee</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">,</span> <span class="mi">34</span><span class="o">,</span> <span class="s">"Mysore"</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">emp1</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Employee</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">,</span> <span class="mi">34</span><span class="o">)</span>
+<span class="n">emp</span><span class="o">.</span><span class="n">show</span><span class="o">()</span>
+<span class="n">emp1</span><span class="o">.</span><span class="n">show</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Hari
+34
+Mysore
+Hari
+34
+NA
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[65]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Employee</span>
+<span class="ansi-cyan-fg">emp</span>: <span class="ansi-green-fg">wrapper</span>.<span class="ansi-green-fg">wrapper</span>.<span class="ansi-green-fg">Employee</span> = $sess.cmd64Wrapper$Helper$Employee@2dff6788
+<span class="ansi-cyan-fg">emp1</span>: <span class="ansi-green-fg">wrapper</span>.<span class="ansi-green-fg">wrapper</span>.<span class="ansi-green-fg">Employee</span> = $sess.cmd64Wrapper$Helper$Employee@783477be</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [66]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">class</span> <span class="nc">Maths</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">={</span>
+        <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">c</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">math</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Maths</span><span class="o">()</span>
+<span class="n">println</span><span class="o">(</span><span class="n">math</span><span class="o">.</span><span class="n">add</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">10</span><span class="o">))</span>
+<span class="n">println</span><span class="o">(</span><span class="n">math</span><span class="o">.</span><span class="n">add</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mi">20</span><span class="o">,</span> <span class="mi">30</span><span class="o">))</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>20
+60
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[66]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Maths</span>
+<span class="ansi-cyan-fg">math</span>: <span class="ansi-green-fg">Maths</span> = $sess.cmd65Wrapper$Helper$Maths@6c1f42e7</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [70]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">class</span> <span class="nc">Human</span><span class="o">{</span>
+    <span class="k">val</span> <span class="n">name</span> <span class="k">=</span> <span class="s">"NA"</span>
+    <span class="k">def</span> <span class="n">message</span><span class="o">(){</span>
+        <span class="n">println</span><span class="o">(</span><span class="s">"Human"</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[70]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Human</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [73]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">class</span> <span class="nc">Male</span> <span class="k">extends</span> <span class="nc">Human</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">val</span> <span class="n">name</span> <span class="k">=</span> <span class="s">"ABC"</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">message</span><span class="o">(){</span>
+        <span class="n">println</span><span class="o">(</span><span class="s">"Male"</span><span class="o">)</span>
+        <span class="n">println</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[73]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Male</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [74]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">male</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Male</span><span class="o">()</span>
+<span class="n">male</span><span class="o">.</span><span class="n">message</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Male
+ABC
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[74]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">male</span>: <span class="ansi-green-fg">Male</span> = $sess.cmd72Wrapper$Helper$Male@27824ee5</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [1]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">abstract</span> <span class="k">class</span> <span class="nc">Human</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">getName</span><span class="o">()</span><span class="k">:</span><span class="kt">String</span>
+    <span class="k">def</span> <span class="n">getAge</span><span class="o">()</span><span class="k">:</span><span class="kt">Int</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[1]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Human</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [1]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">human</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Human</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+
+<pre>cmd1.sc:1: class Human is abstract; cannot be instantiated
 val human = new Human()
-```
+            ^</pre>
 
-    cmd1.sc:1: class Human is abstract; cannot be instantiated
-    val human = new Human()
-                ^
+</div>
 
+</div>
 
-    Compilation Failed
+<div class="output_area">
 
+<div class="output_subarea output_text output_error">
 
+<pre>Compilation Failed</pre>
 
-```scala211
-class Male(name:String, age:Int) extends Human{
-    def getName() : String = {
-        (this.name)
-    }
-    def getAge():Int = {
-        (this.age)
-    }
-}
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mclass[39m [36mMale[39m
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [2]:</div>
 
-```scala211
-val person = new Male("Hari", 40)
-println(person.getName())
-println(person.getAge)
-```
+<div class="inner_cell">
 
-    Hari
-    40
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">class</span> <span class="nc">Male</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">Human</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">getName</span><span class="o">()</span> <span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="k">def</span> <span class="n">getAge</span><span class="o">()</span><span class="k">:</span><span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
-    [36mperson[39m: [32mMale[39m = $sess.cmd1Wrapper$Helper$Male@5e984b4
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
-```scala211
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Male</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [3]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">person</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Male</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">,</span> <span class="mi">40</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">getName</span><span class="o">())</span>
+<span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">getAge</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Hari
+40
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">person</span>: <span class="ansi-green-fg">Male</span> = $sess.cmd1Wrapper$Helper$Male@5e984b4</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [3]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">male1</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Male</span><span class="o">()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+
+<pre>cmd3.sc:1: not enough arguments for constructor Male: (name: String, age: Int)cmd3Wrapper.this.cmd1.wrapper.Male.
+Unspecified value parameters name, age.
 val male1 = new Male()
-```
+            ^</pre>
 
-    cmd3.sc:1: not enough arguments for constructor Male: (name: String, age: Int)cmd3Wrapper.this.cmd1.wrapper.Male.
-    Unspecified value parameters name, age.
-    val male1 = new Male()
-                ^
+</div>
 
+</div>
 
-    Compilation Failed
+<div class="output_area">
 
+<div class="output_subarea output_text output_error">
 
+<pre>Compilation Failed</pre>
 
-```scala211
-trait Human{
-    def getName() : String
-    def getAge() : Int
-}
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mtrait[39m [36mHuman[39m
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [4]:</div>
 
-```scala211
-class Male(name:String, age:Int) extends Human{
-    def getName() : String = {
-        (this.name)
-    }
-    def getAge():Int = {
-        (this.age)
-    }
-}
-```
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">trait</span> <span class="nc">Human</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">getName</span><span class="o">()</span> <span class="k">:</span> <span class="kt">String</span>
+    <span class="k">def</span> <span class="n">getAge</span><span class="o">()</span> <span class="k">:</span> <span class="kt">Int</span>
+<span class="o">}</span>
+</pre>
 
-    defined [32mclass[39m [36mMale[39m
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-val person = new Male("Hari", 40)
-println(person.getName())
-println(person.getAge)
-```
+<div class="output_wrapper">
 
-    Hari
-    40
+<div class="output">
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[4]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre>defined <span class="ansi-green-fg">trait</span> <span class="ansi-cyan-fg">Human</span></pre>
 
-    [36mperson[39m: [32mMale[39m = $sess.cmd4Wrapper$Helper$Male@267190a0
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-abstract class Human{
-    def getName():String
-    def getAge():Int
-}
+</div>
 
-trait Printable{
-    def show()
-}
+<div class="cell border-box-sizing code_cell rendered">
 
-trait Display{
-    def message(){
-        
-    }
-}
+<div class="input">
 
-```
+<div class="prompt input_prompt">In [5]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-    defined [32mclass[39m [36mHuman[39m
-    defined [32mtrait[39m [36mPrintable[39m
-    defined [32mtrait[39m [36mDisplay[39m
+<pre><span></span><span class="k">class</span> <span class="nc">Male</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">Human</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">getName</span><span class="o">()</span> <span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="k">def</span> <span class="n">getAge</span><span class="o">()</span><span class="k">:</span><span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-class Male(name:String, age:Int) extends Human with Printable with Display{
-    def getName() : String = {
-        (this.name)
-    }
-    def getAge():Int = {
-        (this.age)
-    }
-    def show(){
-        val name = this.getName()
-        val age = this.getAge()
-        println(s"Hi $name, you are $age years old")
-    }
-}
-```
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-    defined [32mclass[39m [36mMale[39m
+<div class="prompt output_prompt">Out[5]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Male</span></pre>
 
+</div>
 
-```scala211
-val person = new Male("Ravi", 35)
-person.show()
-```
+</div>
 
-    Hi Ravi, you are 35 years old
+</div>
 
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-    [36mperson[39m: [32mMale[39m = $sess.cmd14Wrapper$Helper$Male@2d6b4f15
+<div class="prompt input_prompt">In [6]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-```scala211
-val numbers = Array(1,2,3,4,0,5,6,7,8,9)
-    
-for(num <- numbers){
-    try{
-      println(100 / num)   
-    }
-    catch{
-        case ae:ArithmeticException => println("Division by Zero Exception")
-        case e:Exception => println(e.getMessage())
-        case _ => println("Reason  for Exception is unknown")
-    }
-}
-```
+<pre><span></span><span class="k">val</span> <span class="n">person</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Male</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">,</span> <span class="mi">40</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">getName</span><span class="o">())</span>
+<span class="n">println</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="n">getAge</span><span class="o">)</span>
+</pre>
 
-    100
-    50
-    33
-    25
-    Division by Zero Exception
-    20
-    16
-    14
-    12
-    11
+</div>
 
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-    [36mnumbers[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m4[39m, [32m0[39m, [32m5[39m, [32m6[39m, [32m7[39m, [32m8[39m, [32m9[39m)
+<div class="output">
 
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>Hari
+40
+</pre>
 
-```scala211
-val a = "ABC"
-```
+</div>
 
+</div>
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[6]:</div>
 
-    [36ma[39m: [32mString[39m = [32m"ABC"[39m
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">person</span>: <span class="ansi-green-fg">Male</span> = $sess.cmd4Wrapper$Helper$Male@267190a0</pre>
 
+</div>
 
+</div>
 
-```scala211
-a.toInt
-```
+</div>
 
+</div>
 
-    java.lang.NumberFormatException: For input string: "ABC"
+</div>
 
-      java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+<div class="cell border-box-sizing code_cell rendered">
 
-      java.lang.Integer.parseInt(Integer.java:580)
+<div class="input">
 
-      java.lang.Integer.parseInt(Integer.java:615)
+<div class="prompt input_prompt">In [13]:</div>
 
-      scala.collection.immutable.StringLike$class.toInt(StringLike.scala:273)
+<div class="inner_cell">
 
-      scala.collection.immutable.StringOps.toInt(StringOps.scala:29)
+<div class="input_area">
 
-      $sess.cmd24Wrapper$Helper.<init>(cmd24.sc:1)
+<div class=" highlight hl-scala">
 
-      $sess.cmd24Wrapper.<init>(cmd24.sc:181)
+<pre><span></span><span class="k">abstract</span> <span class="k">class</span> <span class="nc">Human</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">getName</span><span class="o">()</span><span class="k">:</span><span class="kt">String</span>
+    <span class="k">def</span> <span class="n">getAge</span><span class="o">()</span><span class="k">:</span><span class="kt">Int</span>
+<span class="o">}</span>
 
-      $sess.cmd24$.<init>(cmd24.sc:113)
+<span class="k">trait</span> <span class="nc">Printable</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">show</span><span class="o">()</span>
+<span class="o">}</span>
 
-      $sess.cmd24$.<clinit>(cmd24.sc:-1)
+<span class="k">trait</span> <span class="nc">Display</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">message</span><span class="o">(){</span>
 
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
-```scala211
-numbers
-```
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-    [36mres25[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m4[39m, [32m0[39m, [32m5[39m, [32m6[39m, [32m7[39m, [32m8[39m, [32m9[39m)
+<div class="output">
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[13]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
-```scala211
-numbers(2)
-```
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Human</span>
+defined <span class="ansi-green-fg">trait</span> <span class="ansi-cyan-fg">Printable</span>
+defined <span class="ansi-green-fg">trait</span> <span class="ansi-cyan-fg">Display</span></pre>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mres26[39m: [32mInt[39m = [32m3[39m
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-numbers(4) = 10
-```
+<div class="prompt input_prompt">In [15]:</div>
 
+<div class="inner_cell">
 
-```scala211
-numbers
-```
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">class</span> <span class="nc">Male</span><span class="o">(</span><span class="n">name</span><span class="k">:</span><span class="kt">String</span><span class="o">,</span> <span class="n">age</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">Human</span> <span class="k">with</span> <span class="nc">Printable</span> <span class="k">with</span> <span class="nc">Display</span><span class="o">{</span>
+    <span class="k">def</span> <span class="n">getName</span><span class="o">()</span> <span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">name</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="k">def</span> <span class="n">getAge</span><span class="o">()</span><span class="k">:</span><span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="n">age</span><span class="o">)</span>
+    <span class="o">}</span>
+    <span class="k">def</span> <span class="n">show</span><span class="o">(){</span>
+        <span class="k">val</span> <span class="n">name</span> <span class="k">=</span> <span class="k">this</span><span class="o">.</span><span class="n">getName</span><span class="o">()</span>
+        <span class="k">val</span> <span class="n">age</span> <span class="k">=</span> <span class="k">this</span><span class="o">.</span><span class="n">getAge</span><span class="o">()</span>
+        <span class="n">println</span><span class="o">(</span><span class="s">s"Hi</span> <span class="si">$name</span><span class="s">, you are</span> <span class="si">$age</span> <span class="s">years old"</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
-    [36mres28[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m4[39m, [32m10[39m, [32m5[39m, [32m6[39m, [32m7[39m, [32m8[39m, [32m9[39m)
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-val nums = new Array[Int](10)
-```
+<div class="output">
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[15]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
-    [36mnums[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m, [32m0[39m)
+<pre>defined <span class="ansi-green-fg">class</span> <span class="ansi-cyan-fg">Male</span></pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-for(i <- 0 until 10){
-    nums(i) = i * i
-}
-```
+</div>
 
+</div>
 
-```scala211
-nums
-```
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [16]:</div>
 
+<div class="inner_cell">
 
-    [36mres31[39m: [32mArray[39m[[32mInt[39m] = [33mArray[39m([32m0[39m, [32m1[39m, [32m4[39m, [32m9[39m, [32m16[39m, [32m25[39m, [32m36[39m, [32m49[39m, [32m64[39m, [32m81[39m)
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">val</span> <span class="n">person</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Male</span><span class="o">(</span><span class="s">"Ravi"</span><span class="o">,</span> <span class="mi">35</span><span class="o">)</span>
+<span class="n">person</span><span class="o">.</span><span class="n">show</span><span class="o">()</span>
+</pre>
 
+</div>
 
-```scala211
-import java.util.Date
+</div>
 
-val date = new Date()
-println(date.isInstanceOf[Date])
-```
+</div>
 
-    true
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
-    [32mimport [39m[36mjava.util.Date
-    
-    [39m
-    [36mdate[39m: [32mDate[39m = Sun Dec 10 11:03:09 IST 2017
+<pre>Hi Ravi, you are 35 years old
+</pre>
 
+</div>
 
+</div>
 
+<div class="output_area">
 
-```scala211
-val a = 100
-val b = a.asInstanceOf[Double]
-println(b)
-```
+<div class="prompt output_prompt">Out[16]:</div>
 
-    100.0
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">person</span>: <span class="ansi-green-fg">Male</span> = $sess.cmd14Wrapper$Helper$Male@2d6b4f15</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    [36ma[39m: [32mInt[39m = [32m100[39m
-    [36mb[39m: [32mDouble[39m = [32m100.0[39m
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-import java.util._
-```
+<div class="prompt input_prompt">In [21]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-    [32mimport [39m[36mjava.util._[39m
+<pre><span></span><span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="mi">4</span><span class="o">,</span><span class="mi">0</span><span class="o">,</span><span class="mi">5</span><span class="o">,</span><span class="mi">6</span><span class="o">,</span><span class="mi">7</span><span class="o">,</span><span class="mi">8</span><span class="o">,</span><span class="mi">9</span><span class="o">)</span>
 
+<span class="k">for</span><span class="o">(</span><span class="n">num</span> <span class="k"><-</span> <span class="n">numbers</span><span class="o">){</span>
+    <span class="k">try</span><span class="o">{</span>
+      <span class="n">println</span><span class="o">(</span><span class="mi">100</span> <span class="o">/</span> <span class="n">num</span><span class="o">)</span>   
+    <span class="o">}</span>
+    <span class="k">catch</span><span class="o">{</span>
+        <span class="k">case</span> <span class="n">ae</span><span class="k">:</span><span class="kt">ArithmeticException</span> <span class="o">=></span> <span class="n">println</span><span class="o">(</span><span class="s">"Division by Zero Exception"</span><span class="o">)</span>
+        <span class="k">case</span> <span class="n">e</span><span class="k">:</span><span class="kt">Exception</span> <span class="o">=></span> <span class="n">println</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="n">getMessage</span><span class="o">())</span>
+        <span class="k">case</span> <span class="k">_</span> <span class="k">=></span> <span class="n">println</span><span class="o">(</span><span class="s">"Reason  for Exception is unknown"</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
+</div>
 
-```scala211
-import java.util.{Date, Calendar}
-```
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
-    [32mimport [39m[36mjava.util.{Date, Calendar}[39m
+<div class="output_area">
 
+<div class="output_subarea output_stream output_stdout output_text">
 
+<pre>100
+50
+33
+25
+Division by Zero Exception
+20
+16
+14
+12
+11
+</pre>
 
+</div>
 
-```scala211
-val persons = Array(Array("Naga", "Ravi"), Array(30, 33))
-```
+</div>
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[21]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
-    [36mpersons[39m: [32mArray[39m[[32mArray[39m[[32m_40[39m] forSome { type [32m_40[39m >: [32mInt[39m with [32mString[39m }] = [33mArray[39m([Ljava.lang.String;@7adbbf67, [I@30530aa5)
+<pre><span class="ansi-cyan-fg">numbers</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">5</span>, <span class="ansi-green-fg">6</span>, <span class="ansi-green-fg">7</span>, <span class="ansi-green-fg">8</span>, <span class="ansi-green-fg">9</span>)</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-println(persons(0)(1))
-```
+</div>
 
-    Ravi
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-var message = raw"naga\t30\tbangalore\n"
-println(message)
-```
+<div class="prompt input_prompt">In [24]:</div>
 
-    naga\t30\tbangalore\n
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">val</span> <span class="n">a</span> <span class="k">=</span> <span class="s">"ABC"</span>
+</pre>
 
+</div>
 
-    [36mmessage[39m: [32mString[39m = [32m"""
-    naga\t30\tbangalore\n
-    """[39m
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-//Scala Collections
-import scala.collection.mutable.ListBuffer
-val names = ListBuffer("Hari")
-```
+<div class="output">
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[24]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
-    [32mimport [39m[36mscala.collection.mutable.ListBuffer
-    [39m
-    [36mnames[39m: [32mcollection[39m.[32mmutable[39m.[32mListBuffer[39m[[32mString[39m] = [33mListBuffer[39m([32m"Hari"[39m)
+<pre><span class="ansi-cyan-fg">a</span>: <span class="ansi-green-fg">String</span> = <span class="ansi-green-fg">"ABC"</span></pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-names+= "Ravi"
-names += "Kishore"
-```
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-    [36mres48_0[39m: [32mListBuffer[39m[[32mString[39m] = [33mListBuffer[39m([32m"Hari"[39m, [32m"Ravi"[39m, [32m"Ravi"[39m, [32m"Kishore"[39m)
-    [36mres48_1[39m: [32mListBuffer[39m[[32mString[39m] = [33mListBuffer[39m([32m"Hari"[39m, [32m"Ravi"[39m, [32m"Ravi"[39m, [32m"Kishore"[39m)
+<div class="prompt input_prompt">In [25]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-```scala211
-val names = List("A", "B", "C", "D")
-for(name <- names){
-    println(name)
-}
-```
+<pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">toInt</span>
+</pre>
 
-    A
-    B
-    C
-    D
+</div>
 
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-    [36mnames[39m: [32mList[39m[[32mString[39m] = [33mList[39m([32m"A"[39m, [32m"B"[39m, [32m"C"[39m, [32m"D"[39m)
+<div class="output">
 
+<div class="output_area">
 
+<div class="output_subarea output_text output_error">
 
+<pre><span class="ansi-red-fg">java.lang.NumberFormatException: For input string: "ABC"</span>
+  java.lang.NumberFormatException.forInputString(<span class="ansi-green-fg">NumberFormatException.java</span>:<span class="ansi-green-fg">65</span>)
+  java.lang.Integer.parseInt(<span class="ansi-green-fg">Integer.java</span>:<span class="ansi-green-fg">580</span>)
+  java.lang.Integer.parseInt(<span class="ansi-green-fg">Integer.java</span>:<span class="ansi-green-fg">615</span>)
+  scala.collection.immutable.StringLike$class.toInt(<span class="ansi-green-fg">StringLike.scala</span>:<span class="ansi-green-fg">273</span>)
+  scala.collection.immutable.StringOps.toInt(<span class="ansi-green-fg">StringOps.scala</span>:<span class="ansi-green-fg">29</span>)
+  $sess.cmd24Wrapper$Helper.<init>(<span class="ansi-green-fg">cmd24.sc</span>:<span class="ansi-green-fg">1</span>)
+  $sess.cmd24Wrapper.<init>(<span class="ansi-green-fg">cmd24.sc</span>:<span class="ansi-green-fg">181</span>)
+  $sess.cmd24$.<init>(<span class="ansi-green-fg">cmd24.sc</span>:<span class="ansi-green-fg">113</span>)
+  $sess.cmd24$.<clinit>(<span class="ansi-green-fg">cmd24.sc</span>:<span class="ansi-green-fg">-1</span>)</pre>
 
-```scala211
-val names = scala.collection.mutable.Set("Hari")
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mnames[39m: [32mcollection[39m.[32mmutable[39m.[32mSet[39m[[32mString[39m] = [33mSet[39m([32m"Hari"[39m)
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [26]:</div>
 
-```scala211
-names += "Ravi"
-```
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">numbers</span>
+</pre>
 
-    [36mres52[39m: [32mcollection[39m.[32mmutable[39m.[32mSet[39m[[32mString[39m] = [33mSet[39m([32m"Hari"[39m, [32m"Ravi"[39m)
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-val names = new ArrayList[String]()
-```
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[26]:</div>
 
-    [36mnames[39m: [32mArrayList[39m[[32mString[39m] = []
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">res25</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">5</span>, <span class="ansi-green-fg">6</span>, <span class="ansi-green-fg">7</span>, <span class="ansi-green-fg">8</span>, <span class="ansi-green-fg">9</span>)</pre>
 
+</div>
 
+</div>
 
-```scala211
-import scala.collection.JavaConversions._
+</div>
 
-names.add("A")
-names.add("B")
-names.add("C")
+</div>
 
-for(name <- names){
-    println(name)
-}
-```
+</div>
 
-    A
-    B
-    C
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [27]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
-    [32mimport [39m[36mscala.collection.JavaConversions._
-    
-    [39m
-    [36mres54_1[39m: [32mBoolean[39m = [32mtrue[39m
-    [36mres54_2[39m: [32mBoolean[39m = [32mtrue[39m
-    [36mres54_3[39m: [32mBoolean[39m = [32mtrue[39m
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">numbers</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</pre>
 
+</div>
 
+</div>
 
-```scala211
-val numbers = List(1,2,3)
-numbers
-```
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
-    [36mnumbers[39m: [32mList[39m[[32mInt[39m] = [33mList[39m([32m1[39m, [32m2[39m, [32m3[39m)
-    [36mres63_1[39m: [32mList[39m[[32mInt[39m] = [33mList[39m([32m1[39m, [32m2[39m, [32m3[39m)
+<div class="output_area">
 
+<div class="prompt output_prompt">Out[27]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">res26</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">3</span></pre>
 
-```scala211
-def add(a:Int, b:Int) : Int = {
-    (a + b)
-}
-numbers.map(num => num * num).filter(num => num > 30).reduce((a,b) => (a + b))
-```
+</div>
 
+</div>
 
-    java.lang.UnsupportedOperationException: empty.reduceLeft
+</div>
 
-      scala.collection.LinearSeqOptimized$class.reduceLeft(LinearSeqOptimized.scala:137)
+</div>
 
-      scala.collection.immutable.List.reduceLeft(List.scala:84)
+</div>
 
-      scala.collection.TraversableOnce$class.reduce(TraversableOnce.scala:208)
+<div class="cell border-box-sizing code_cell rendered">
 
-      scala.collection.AbstractTraversable.reduce(Traversable.scala:104)
+<div class="input">
 
-      $sess.cmd64Wrapper$Helper.<init>(cmd64.sc:4)
+<div class="prompt input_prompt">In [28]:</div>
 
-      $sess.cmd64Wrapper.<init>(cmd64.sc:607)
+<div class="inner_cell">
 
-      $sess.cmd64$.<init>(cmd64.sc:404)
+<div class="input_area">
 
-      $sess.cmd64$.<clinit>(cmd64.sc:-1)
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">numbers</span><span class="o">(</span><span class="mi">4</span><span class="o">)</span> <span class="k">=</span> <span class="mi">10</span>
+</pre>
 
+</div>
 
-```scala211
-numbers.max
-numbers.min
-numbers.sum
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mres62_0[39m: [32mInt[39m = [32m7[39m
-    [36mres62_1[39m: [32mInt[39m = [32m1[39m
-    [36mres62_2[39m: [32mInt[39m = [32m28[39m
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [29]:</div>
 
+<div class="inner_cell">
 
-```scala211
-val numbers = List(1,2,3)
-val squares = numbers.map(num =>{
- num * num   
-})
-val sum = squares.reduce((a, b) => (a + b))
-sum
-```
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="n">numbers</span>
+</pre>
 
+</div>
 
-    [36mnumbers[39m: [32mList[39m[[32mInt[39m] = [33mList[39m([32m1[39m, [32m2[39m, [32m3[39m)
-    [36msquares[39m: [32mList[39m[[32mInt[39m] = [33mList[39m([32m1[39m, [32m4[39m, [32m9[39m)
-    [36msum[39m: [32mInt[39m = [32m14[39m
-    [36mres66_3[39m: [32mInt[39m = [32m14[39m
+</div>
 
+</div>
 
+</div>
 
+<div class="output_wrapper">
 
-```scala211
-//Option
+<div class="output">
 
-def convertStringToNum(num:String) : Option[Int] = {
-    try{
-      Some(num.toInt)  
-    }catch{
-        case e:Exception => None
-    }
-    
-}
+<div class="output_area">
 
-val result = convertStringToNum("100")
-println(result.get)
-```
+<div class="prompt output_prompt">Out[29]:</div>
 
-    100
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">res28</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">10</span>, <span class="ansi-green-fg">5</span>, <span class="ansi-green-fg">6</span>, <span class="ansi-green-fg">7</span>, <span class="ansi-green-fg">8</span>, <span class="ansi-green-fg">9</span>)</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    defined [32mfunction[39m [36mconvertStringToNum[39m
-    [36mresult[39m: [32mOption[39m[[32mInt[39m] = [33mSome[39m([32m100[39m)
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-```scala211
-val numbers = List("1", "2", "3", "ABC", "123")
-```
+<div class="prompt input_prompt">In [30]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-    [36mnumbers[39m: [32mList[39m[[32mString[39m] = [33mList[39m([32m"1"[39m, [32m"2"[39m, [32m"3"[39m, [32m"ABC"[39m, [32m"123"[39m)
+<pre><span></span><span class="k">val</span> <span class="n">nums</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Array</span><span class="o">[</span><span class="kt">Int</span><span class="o">](</span><span class="mi">10</span><span class="o">)</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-val nums = numbers.map(num => convertStringToNum(num)).filter(num => num != None).map(num => (num.get))
-```
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-    [36mnums[39m: [32mList[39m[[32mInt[39m] = [33mList[39m([32m1[39m, [32m2[39m, [32m3[39m, [32m123[39m)
+<div class="prompt output_prompt">Out[30]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">nums</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">0</span>)</pre>
 
+</div>
 
-```scala211
-val names = List("ravi", "", "siva", "")
-def validateName(name: String): Either[String, String] = {
- if (name.isEmpty) Left("Name is empty")
- else Right(name)
- }
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mnames[39m: [32mList[39m[[32mString[39m] = [33mList[39m([32m"ravi"[39m, [32m""[39m, [32m"siva"[39m, [32m""[39m)
-    defined [32mfunction[39m [36mvalidateName[39m
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [31]:</div>
 
+<div class="inner_cell">
 
-```scala211
-for(name <- names){
-    val result = validateName(name)
-    println(result)
-}
-```
+<div class="input_area">
 
-    Right(ravi)
-    Left(Name is empty)
-    Right(siva)
-    Left(Name is empty)
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">for</span><span class="o">(</span><span class="n">i</span> <span class="k"><-</span> <span class="mi">0</span> <span class="n">until</span> <span class="mi">10</span><span class="o">){</span>
+    <span class="n">nums</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="k">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span>
+<span class="o">}</span>
+</pre>
 
+</div>
 
-```scala211
-//Try
-import scala.util.Try
+</div>
 
-def divide(num:Int) : Try[Int] = {
-    val data = Try(100 / num)
-    (data)
-}
+</div>
 
-val result = divide(0)
-```
+</div>
 
+</div>
 
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
-    [32mimport [39m[36mscala.util.Try
-    
-    [39m
-    defined [32mfunction[39m [36mdivide[39m
-    [36mresult[39m: [32mTry[39m[[32mInt[39m] = [33mFailure[39m(java.lang.ArithmeticException: / by zero)
+<div class="prompt input_prompt">In [32]:</div>
 
+<div class="inner_cell">
 
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
-```scala211
-val factor = 10
-```
+<pre><span></span><span class="n">nums</span>
+</pre>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mfactor[39m: [32mInt[39m = [32m10[39m
+</div>
 
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
 
-```scala211
-val data = (x:Int) => x * factor
-```
+<div class="prompt output_prompt">Out[32]:</div>
 
+<div class="output_text output_subarea output_execute_result">
 
+<pre><span class="ansi-cyan-fg">res31</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Array</span>(<span class="ansi-green-fg">0</span>, <span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">9</span>, <span class="ansi-green-fg">16</span>, <span class="ansi-green-fg">25</span>, <span class="ansi-green-fg">36</span>, <span class="ansi-green-fg">49</span>, <span class="ansi-green-fg">64</span>, <span class="ansi-green-fg">81</span>)</pre>
 
+</div>
 
-    [36mdata[39m: [32mInt[39m => [32mInt[39m = <function1>
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-```scala211
-data(10)
-```
+<div class="cell border-box-sizing code_cell rendered">
 
+<div class="input">
 
+<div class="prompt input_prompt">In [35]:</div>
 
+<div class="inner_cell">
 
-    [36mres87[39m: [32mInt[39m = [32m100[39m
+<div class="input_area">
 
+<div class=" highlight hl-scala">
 
+<pre><span></span><span class="k">import</span> <span class="nn">java.util.Date</span>
 
+<span class="k">val</span> <span class="n">date</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="o">()</span>
+<span class="n">println</span><span class="o">(</span><span class="n">date</span><span class="o">.</span><span class="n">isInstanceOf</span><span class="o">[</span><span class="kt">Date</span><span class="o">])</span>
+</pre>
 
-```scala211
-var name = Nil
-```
+</div>
 
+</div>
 
+</div>
 
+</div>
 
-    [36mname[39m: [32mNil[39m.type = [33mList[39m()
+<div class="output_wrapper">
 
+<div class="output">
 
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>true
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[35]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">java.util.Date</span> 
+<span class="ansi-cyan-fg">date</span>: <span class="ansi-green-fg">Date</span> = Sun Dec 10 11:03:09 IST 2017</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [36]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">a</span> <span class="k">=</span> <span class="mi">100</span>
+<span class="k">val</span> <span class="n">b</span> <span class="k">=</span> <span class="n">a</span><span class="o">.</span><span class="n">asInstanceOf</span><span class="o">[</span><span class="kt">Double</span><span class="o">]</span>
+<span class="n">println</span><span class="o">(</span><span class="n">b</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>100.0
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[36]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">a</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">100</span>
+<span class="ansi-cyan-fg">b</span>: <span class="ansi-green-fg">Double</span> = <span class="ansi-green-fg">100.0</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [37]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">import</span> <span class="nn">java.util._</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[37]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">java.util._</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [38]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">import</span> <span class="nn">java.util.</span><span class="o">{</span><span class="nc">Date</span><span class="o">,</span> <span class="nc">Calendar</span><span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[38]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">java.util.{Date, Calendar}</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [39]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">persons</span> <span class="k">=</span> <span class="nc">Array</span><span class="o">(</span><span class="nc">Array</span><span class="o">(</span><span class="s">"Naga"</span><span class="o">,</span> <span class="s">"Ravi"</span><span class="o">),</span> <span class="nc">Array</span><span class="o">(</span><span class="mi">30</span><span class="o">,</span> <span class="mi">33</span><span class="o">))</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[39]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">persons</span>: <span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">Array</span>[<span class="ansi-green-fg">_40</span>] forSome { type <span class="ansi-green-fg">_40</span> >: <span class="ansi-green-fg">Int</span> with <span class="ansi-green-fg">String</span> }] = <span class="ansi-yellow-fg">Array</span>([Ljava.lang.String;@7adbbf67, [I@30530aa5)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [41]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="n">println</span><span class="o">(</span><span class="n">persons</span><span class="o">(</span><span class="mi">0</span><span class="o">)(</span><span class="mi">1</span><span class="o">))</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Ravi
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [43]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">var</span> <span class="n">message</span> <span class="k">=</span> <span class="s">raw"naga\t30\tbangalore\n"</span>
+<span class="n">println</span><span class="o">(</span><span class="n">message</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>naga\t30\tbangalore\n
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[43]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">message</span>: <span class="ansi-green-fg">String</span> = <span class="ansi-green-fg">"""
+naga\t30\tbangalore\n
+"""</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [47]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="c1">//Scala Collections</span>
+<span class="k">import</span> <span class="nn">scala.collection.mutable.ListBuffer</span>
+<span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="nc">ListBuffer</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[47]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">scala.collection.mutable.ListBuffer</span> 
+<span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">collection</span>.<span class="ansi-green-fg">mutable</span>.<span class="ansi-green-fg">ListBuffer</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">ListBuffer</span>(<span class="ansi-green-fg">"Hari"</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [49]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="n">names</span><span class="o">+=</span> <span class="s">"Ravi"</span>
+<span class="n">names</span> <span class="o">+=</span> <span class="s">"Kishore"</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[49]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">res48_0</span>: <span class="ansi-green-fg">ListBuffer</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">ListBuffer</span>(<span class="ansi-green-fg">"Hari"</span>, <span class="ansi-green-fg">"Ravi"</span>, <span class="ansi-green-fg">"Ravi"</span>, <span class="ansi-green-fg">"Kishore"</span>)
+<span class="ansi-cyan-fg">res48_1</span>: <span class="ansi-green-fg">ListBuffer</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">ListBuffer</span>(<span class="ansi-green-fg">"Hari"</span>, <span class="ansi-green-fg">"Ravi"</span>, <span class="ansi-green-fg">"Ravi"</span>, <span class="ansi-green-fg">"Kishore"</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [50]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="s">"A"</span><span class="o">,</span> <span class="s">"B"</span><span class="o">,</span> <span class="s">"C"</span><span class="o">,</span> <span class="s">"D"</span><span class="o">)</span>
+<span class="k">for</span><span class="o">(</span><span class="n">name</span> <span class="k"><-</span> <span class="n">names</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>A
+B
+C
+D
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[50]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">"A"</span>, <span class="ansi-green-fg">"B"</span>, <span class="ansi-green-fg">"C"</span>, <span class="ansi-green-fg">"D"</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [52]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="n">scala</span><span class="o">.</span><span class="n">collection</span><span class="o">.</span><span class="n">mutable</span><span class="o">.</span><span class="nc">Set</span><span class="o">(</span><span class="s">"Hari"</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[52]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">collection</span>.<span class="ansi-green-fg">mutable</span>.<span class="ansi-green-fg">Set</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">Set</span>(<span class="ansi-green-fg">"Hari"</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [53]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="n">names</span> <span class="o">+=</span> <span class="s">"Ravi"</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[53]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">res52</span>: <span class="ansi-green-fg">collection</span>.<span class="ansi-green-fg">mutable</span>.<span class="ansi-green-fg">Set</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">Set</span>(<span class="ansi-green-fg">"Hari"</span>, <span class="ansi-green-fg">"Ravi"</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [54]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">[</span><span class="kt">String</span><span class="o">]()</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[54]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">ArrayList</span>[<span class="ansi-green-fg">String</span>] = []</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [55]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">import</span> <span class="nn">scala.collection.JavaConversions._</span>
+
+<span class="n">names</span><span class="o">.</span><span class="n">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">add</span><span class="o">(</span><span class="s">"B"</span><span class="o">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">add</span><span class="o">(</span><span class="s">"C"</span><span class="o">)</span>
+
+<span class="k">for</span><span class="o">(</span><span class="n">name</span> <span class="k"><-</span> <span class="n">names</span><span class="o">){</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>A
+B
+C
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[55]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">scala.collection.JavaConversions._</span> 
+<span class="ansi-cyan-fg">res54_1</span>: <span class="ansi-green-fg">Boolean</span> = <span class="ansi-green-fg">true</span>
+<span class="ansi-cyan-fg">res54_2</span>: <span class="ansi-green-fg">Boolean</span> = <span class="ansi-green-fg">true</span>
+<span class="ansi-cyan-fg">res54_3</span>: <span class="ansi-green-fg">Boolean</span> = <span class="ansi-green-fg">true</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [64]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">)</span>
+<span class="n">numbers</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[64]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">numbers</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>)
+<span class="ansi-cyan-fg">res63_1</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [65]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">a</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">b</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span>
+    <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">)</span>
+<span class="o">}</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">num</span> <span class="k">=></span> <span class="n">num</span> <span class="o">*</span> <span class="n">num</span><span class="o">).</span><span class="n">filter</span><span class="o">(</span><span class="n">num</span> <span class="k">=></span> <span class="n">num</span> <span class="o">></span> <span class="mi">30</span><span class="o">).</span><span class="n">reduce</span><span class="o">((</span><span class="n">a</span><span class="o">,</span><span class="n">b</span><span class="o">)</span> <span class="k">=></span> <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">))</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+
+<pre><span class="ansi-red-fg">java.lang.UnsupportedOperationException: empty.reduceLeft</span>
+  scala.collection.LinearSeqOptimized$class.reduceLeft(<span class="ansi-green-fg">LinearSeqOptimized.scala</span>:<span class="ansi-green-fg">137</span>)
+  scala.collection.immutable.List.reduceLeft(<span class="ansi-green-fg">List.scala</span>:<span class="ansi-green-fg">84</span>)
+  scala.collection.TraversableOnce$class.reduce(<span class="ansi-green-fg">TraversableOnce.scala</span>:<span class="ansi-green-fg">208</span>)
+  scala.collection.AbstractTraversable.reduce(<span class="ansi-green-fg">Traversable.scala</span>:<span class="ansi-green-fg">104</span>)
+  $sess.cmd64Wrapper$Helper.<init>(<span class="ansi-green-fg">cmd64.sc</span>:<span class="ansi-green-fg">4</span>)
+  $sess.cmd64Wrapper.<init>(<span class="ansi-green-fg">cmd64.sc</span>:<span class="ansi-green-fg">607</span>)
+  $sess.cmd64$.<init>(<span class="ansi-green-fg">cmd64.sc</span>:<span class="ansi-green-fg">404</span>)
+  $sess.cmd64$.<clinit>(<span class="ansi-green-fg">cmd64.sc</span>:<span class="ansi-green-fg">-1</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [63]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="n">numbers</span><span class="o">.</span><span class="n">max</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">min</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">sum</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[63]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">res62_0</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">7</span>
+<span class="ansi-cyan-fg">res62_1</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">1</span>
+<span class="ansi-cyan-fg">res62_2</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">28</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [67]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">squares</span> <span class="k">=</span> <span class="n">numbers</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">num</span> <span class="o">=>{</span>
+ <span class="n">num</span> <span class="o">*</span> <span class="n">num</span>   
+<span class="o">})</span>
+<span class="k">val</span> <span class="n">sum</span> <span class="k">=</span> <span class="n">squares</span><span class="o">.</span><span class="n">reduce</span><span class="o">((</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">)</span> <span class="k">=></span> <span class="o">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">))</span>
+<span class="n">sum</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[67]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">numbers</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>)
+<span class="ansi-cyan-fg">squares</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">4</span>, <span class="ansi-green-fg">9</span>)
+<span class="ansi-cyan-fg">sum</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">14</span>
+<span class="ansi-cyan-fg">res66_3</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">14</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [75]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="c1">//Option</span>
+
+<span class="k">def</span> <span class="n">convertStringToNum</span><span class="o">(</span><span class="n">num</span><span class="k">:</span><span class="kt">String</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">try</span><span class="o">{</span>
+      <span class="nc">Some</span><span class="o">(</span><span class="n">num</span><span class="o">.</span><span class="n">toInt</span><span class="o">)</span>  
+    <span class="o">}</span><span class="k">catch</span><span class="o">{</span>
+        <span class="k">case</span> <span class="n">e</span><span class="k">:</span><span class="kt">Exception</span> <span class="o">=></span> <span class="nc">None</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">convertStringToNum</span><span class="o">(</span><span class="s">"100"</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>100
+</pre>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[75]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre>defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">convertStringToNum</span>
+<span class="ansi-cyan-fg">result</span>: <span class="ansi-green-fg">Option</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Some</span>(<span class="ansi-green-fg">100</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [79]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">numbers</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="s">"1"</span><span class="o">,</span> <span class="s">"2"</span><span class="o">,</span> <span class="s">"3"</span><span class="o">,</span> <span class="s">"ABC"</span><span class="o">,</span> <span class="s">"123"</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[79]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">numbers</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">"1"</span>, <span class="ansi-green-fg">"2"</span>, <span class="ansi-green-fg">"3"</span>, <span class="ansi-green-fg">"ABC"</span>, <span class="ansi-green-fg">"123"</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [81]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">nums</span> <span class="k">=</span> <span class="n">numbers</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">num</span> <span class="k">=></span> <span class="n">convertStringToNum</span><span class="o">(</span><span class="n">num</span><span class="o">)).</span><span class="n">filter</span><span class="o">(</span><span class="n">num</span> <span class="k">=></span> <span class="n">num</span> <span class="o">!=</span> <span class="nc">None</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="n">num</span> <span class="k">=></span> <span class="o">(</span><span class="n">num</span><span class="o">.</span><span class="n">get</span><span class="o">))</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[81]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">nums</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">1</span>, <span class="ansi-green-fg">2</span>, <span class="ansi-green-fg">3</span>, <span class="ansi-green-fg">123</span>)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [82]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">names</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="s">"ravi"</span><span class="o">,</span> <span class="s">""</span><span class="o">,</span> <span class="s">"siva"</span><span class="o">,</span> <span class="s">""</span><span class="o">)</span>
+<span class="k">def</span> <span class="n">validateName</span><span class="o">(</span><span class="n">name</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">Either</span><span class="o">[</span><span class="kt">String</span>, <span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+ <span class="k">if</span> <span class="o">(</span><span class="n">name</span><span class="o">.</span><span class="n">isEmpty</span><span class="o">)</span> <span class="nc">Left</span><span class="o">(</span><span class="s">"Name is empty"</span><span class="o">)</span>
+ <span class="k">else</span> <span class="nc">Right</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
+ <span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[82]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">names</span>: <span class="ansi-green-fg">List</span>[<span class="ansi-green-fg">String</span>] = <span class="ansi-yellow-fg">List</span>(<span class="ansi-green-fg">"ravi"</span>, <span class="ansi-green-fg">""</span>, <span class="ansi-green-fg">"siva"</span>, <span class="ansi-green-fg">""</span>)
+defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">validateName</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [83]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">for</span><span class="o">(</span><span class="n">name</span> <span class="k"><-</span> <span class="n">names</span><span class="o">){</span>
+    <span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">validateName</span><span class="o">(</span><span class="n">name</span><span class="o">)</span>
+    <span class="n">println</span><span class="o">(</span><span class="n">result</span><span class="o">)</span>
+<span class="o">}</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+
+<pre>Right(ravi)
+Left(Name is empty)
+Right(siva)
+Left(Name is empty)
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [85]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="c1">//Try</span>
+<span class="k">import</span> <span class="nn">scala.util.Try</span>
+
+<span class="k">def</span> <span class="n">divide</span><span class="o">(</span><span class="n">num</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">:</span> <span class="kt">Try</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">data</span> <span class="k">=</span> <span class="nc">Try</span><span class="o">(</span><span class="mi">100</span> <span class="o">/</span> <span class="n">num</span><span class="o">)</span>
+    <span class="o">(</span><span class="n">data</span><span class="o">)</span>
+<span class="o">}</span>
+
+<span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">divide</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[85]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-green-fg">import</span> <span class="ansi-cyan-fg">scala.util.Try</span> 
+defined <span class="ansi-green-fg">function</span> <span class="ansi-cyan-fg">divide</span>
+<span class="ansi-cyan-fg">result</span>: <span class="ansi-green-fg">Try</span>[<span class="ansi-green-fg">Int</span>] = <span class="ansi-yellow-fg">Failure</span>(java.lang.ArithmeticException: / by zero)</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [86]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">factor</span> <span class="k">=</span> <span class="mi">10</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[86]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">factor</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">10</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [87]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">val</span> <span class="n">data</span> <span class="k">=</span> <span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">=></span> <span class="n">x</span> <span class="o">*</span> <span class="n">factor</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[87]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">data</span>: <span class="ansi-green-fg">Int</span> => <span class="ansi-green-fg">Int</span> = <function1></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [88]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="n">data</span><span class="o">(</span><span class="mi">10</span><span class="o">)</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[88]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">res87</span>: <span class="ansi-green-fg">Int</span> = <span class="ansi-green-fg">100</span></pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input">
+
+<div class="prompt input_prompt">In [89]:</div>
+
+<div class="inner_cell">
+
+<div class="input_area">
+
+<div class=" highlight hl-scala">
+
+<pre><span></span><span class="k">var</span> <span class="n">name</span> <span class="k">=</span> <span class="nc">Nil</span>
+</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="output_wrapper">
+
+<div class="output">
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[89]:</div>
+
+<div class="output_text output_subarea output_execute_result">
+
+<pre><span class="ansi-cyan-fg">name</span>: <span class="ansi-green-fg">Nil</span>.type = <span class="ansi-yellow-fg">List</span>()</pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
