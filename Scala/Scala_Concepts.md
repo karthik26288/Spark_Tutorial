@@ -1,18 +1,23 @@
 ## Scala Overview
 
 * Scala is general purpose programming language.
+* Scala stands for Scalable Language
+* Scala was designed by Martin Odersky. 
+* Scala was officially released for java platform in early 2004.
 * Scala is an object-oriented and functional programming language.
 * Scala is modern multi paradigm and hybrid programming language.
+* Scala integrates the features of object-oriented and functional languages.
+* Scala is designed express common programming patterns in a concise, elegant, and type-safe way.
 * Scala designed inspired by Java and Lisp.
-* Scala is Scalable language.
-* Scala runs on top of Java Platform i.e., JVM.
 * Scala is a strong static type language.
 * In scala, everything is an object whether it is a function or a number. 
 * Scala does not have support primitive data types.
-* Scala was designed by Martin Odersky. 
-* Scala was officially released for java platform in early 2004.
 * Scala source file having an extension of either .scala or .sc.
 * Scala is interactive programming language.
+* Scala is hybrid Programming language
+* Scala is compiled to run on the Java Virtual Machine (JVM)
+* Scala is crisp, productive, interactive, Scalability and Reliability
+* Scala is interoperable with Java Library.
 * Scala allows development in two ways:
   * Interactive Mode
   * Standalone
@@ -47,7 +52,20 @@
   }
 ```
 **************
+
 ## Scala Features:
+* Scala is Object Oriented
+  * Scala is pure object oriented
+  * Every value is scala is an Object
+  * Scala Function also is an Object
+  * Subclassing
+  * Mixin-based composition -- Multiple inheritance
+* Scala is Functional
+  * In Scala, every function is an object
+  * Ananymous Functions
+  * Higher- Order functions
+  * Nested
+  * Currying
 * Type inference: Scala offers Type Inference i.e., no need to provide the data type explicitly
 * Singleton objects: Scala offers Singleton i.e., no static members.
 * Immutability: Scala offers Immutability i.e., can not modify variable values.
@@ -60,9 +78,33 @@
 * Rich collection set: Scala provides a rich set of mutable and immutable collections to manipulate the data.
 * Closures: Scala offers ananymous functions
 * etc...
+******************************************
 
-
+## Scala Installation:
+* Scala requires Java JDK
+* Download Java JDK and Install it
+* Add JAVA_HOME
+* Download Scala based on OS
+* Add SCALA_HOME
+* Add Scala executables and Java Executables into the System PATH variable in the .bashrc file.
+### Checking Scala and Java Installations:
+ ```
+  > java -version
+  > javac -version
+  > scala -version
+  > scalac -version
+  ```
+ ## Scala IDEs
+ * Scala Eclipse (Standalone)
+ * Scala Shell (Interactive)
+ * Scala Notebook (Interactive)
+ * Zepplein Notebook (Interactive)
+ * Sublime Text Editor (Standalone)
+ * Vim/Vi Editor (Standalone)
+ * InteliJ (Standalone)
+ * Many more editors
 ********************
+
 ## Scala Variables and Data Types
 * Scala allows two types of variables i.e., val and var
 * val is constant i.e., immutable
@@ -1084,62 +1126,7 @@ object Test {
 ```
 
 
-## Scala Installation:
-* Scala requires Java JDK
-* Download Java JDK and Install it
-* Add JAVA_HOME
-* Download Scala based on OS
-* Add SCALA_HOME
-* Add Scala executables and Java Executables into the System PATH variable in the .bashrc file.
-### Checking Scala and Java Installations:
- ```
-  > java -version
-  > javac -version
-  > scala -version
-  > scalac -version
-  ```
- ## Scala IDEs
- * Scala Eclipse (Standalone)
- * Scala Shell (Interactive)
- * Scala Notebook (Interactive)
- * Zepplein Notebook (Interactive)
- * Sublime Text Editor (Standalone)
- * Vim/Vi Editor (Standalone)
- * InteliJ (Standalone)
- * Many more editors
 
-
-
-## Overview:
-
-* Scala stands for Scalable Language
-* Scala was created by Martin Odersky
-* Scala is multi-paradigm programming language
-* Scala is designed express common programming patterns in a concise, elegant, and type-safe way.
-* Scala integrates the features of object-oriented and functional languages.
-* Scala is hybrid Programming language
-* Scala is compiled to run on the Java Virtual Machine (JVM)
-* Scala is crisp, productive, interactive, Scalability and Reliability
-* Scala is interoperable with Java Library.
-
-### Scala Features:
-* Scala is Object Oriented
-  * Scala is pure object oriented
-  * Every value is scala is an Object
-  * Scala Function also is an Object
-  * Subclassing
-  * Mixin-based composition -- Multiple inheritance
-* Scala is Functional
-  * In Scala, every function is an object
-  * Ananymous Functions
-  * Higher- Order functions
-  * Nested
-  * Currying
-* Scala is statically typed language
-* Scala runs on JVM
-* Scala is interoperable with Java
-* Scala Type Inference
-* Scala closures
 
 
 ## Scala Basics:
