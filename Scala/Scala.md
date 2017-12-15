@@ -720,3 +720,505 @@ import scala.collection.immutable.SortedSet
 val numbers = SortedSet(2,4,3,1,6,5,7,9,8)
 println(numbers)
 ```
+
+
+
+
+
+## Additions
+
+## Scala Classes:
+* Scala class is blue print/template for scala Object
+* Scala Object is instance of class.
+* Scala Objects are created from Scala class using "new" operator
+* Scala class contins state (data member) and behavior (Member function)
+* In Scala Class, we have fields and methods
+
+Class Example
+```
+class Employee(name:String, age:Int, role:String) {
+  val this.name = name
+  val this.age = age
+  val this.role = role
+  def getName() : String = {
+    return name
+  }
+  def getAge() : Int = {
+    (age)
+  }
+  def getRole(): String = {
+    (role)
+  }
+  
+}
+
+Object Example:
+
+object Emp {
+  def main(args:Array[String]) : Unit = {
+    val emp = new Employee("Naga", 30, "Architect")
+    println(emp.getName)
+    println(emp.getAge)
+    println(emp.getRole)
+  }
+}
+
+Extending Classes:
+
+class Manager(name:String, age:Int, role:String, team:String) extends Employee(name:String, age:Int, role:String){
+    val this.team = team
+    def getTeam() : String = {
+        return team
+    }
+}
+
+object Emp {
+  def main(args:Array[String]) : Unit = {
+    val emp = new Manager("Naga", 30, "Architect", "Hadoop")
+    println(emp.getName)
+    println(emp.getAge)
+    println(emp.getRole)
+    println(emp.getTeam)
+  }
+}
+```
+## Singleton Objects:
+* Scala is pure Object Oriented and there are no static members.
+* Scala has Singleton objects instead of static memners.
+* Singleton is class that can have only one instance of Object.
+* We create singleton using the keyword object instead of class keyword.
+* There is no instantiation and there is no parameters passing to constructor.
+```
+Example:
+object Hello {
+  def main(args:Array[String]){
+    println("Hai")
+  }
+}
+```
+## Access Modifiers:
+
+* There are three types:
+  * public i.e., default no need to specify
+  * private
+  * protected
+```
+class Employee {
+.....
+}
+
+The class is public here....
+
+class Employee {
+   private var name:String = null
+   private var age:Int = 0
+   private var place:String = null
+   
+   def setName(name:String) = {
+    this.name = name
+   }
+   def getName(): String = {
+       (this.name)
+   }
+}
+
+object Emp {
+  def main(args:Array[String]) {
+    val emp = new Employee()
+    emp.setName("Naga")
+    println(emp.getName)
+  }
+}
+```
+
+## Scala Control Structures:
+* Branching
+  if-else
+```
+  if (<condition>){
+  }
+  
+  val a = 10
+  if(a < 20){
+    println("Hai")
+  }
+  
+  val a = 30
+  if (a < 20 ){
+    println("hai")
+  }else{
+    println("Bye")
+  }
+```
+* Looping
+  * for loop:
+   ```
+    for( var varName <- []){
+      statements.....
+    }
+    
+    for(i <- 1 to 10){
+        println(i)
+    }
+    
+    for(i <- 1 until 10){
+      println(i)
+    }
+
+    val names = List("ravi", "hari", "siva", "rajesh")
+    for(name <- names){
+      println(name)
+    }
+    
+    val numbers = List(1,2,3,4,5,6,7,8,9)
+    val even = for(num <- numbers if num % 2 == 0) yield num
+    
+    for(num <- even){
+      println(num)
+    }
+   ```
+   * while loop:
+   ```
+    while(<condition>){
+      statements...
+    }
+    
+    var a = 0
+    while( a < 20){
+      println(a)
+      a = a + 1
+    }
+   ```
+   * do-while loop:
+   ```
+    do{
+      statements
+    } while(<condition>)
+    
+    val a = 20
+    do {
+      println(a)
+    }while(a > 20)
+   ```
+
+## Scala Data Types:
+* In Scala, every data type is an Object
+* Scala has the following data types:
+  * Byte (1 Byte)
+  * Short (2 Bytes)
+  * Int (4 Bytes)
+  * Long (8 Bytes)
+  * Float (4 Bytes)
+  * Double (8 Bytes)
+  * Char
+  * String
+  * Boolean
+  * Unit
+  * Null
+  * Any
+  * AnyRef
+* Scala Literals:
+  * Integer:
+    10, 200L
+  * Floating:
+    1.0f, 0.0
+  * Boolean:
+    true/false
+  * Char:
+    'a', 'b'
+  * String:
+    * Single line:
+      "Ravi"
+    * Multi line:
+      """This scala
+      Tutorial.
+      """
+
+## Scala Functions:
+* Scala function is a group of statements that performs a task. 
+* We can divide the code into separate functions such that each function performs a specific task.
+* There is minor difference between scala methods and functions.
+	* A method is the one which is part of a class and has name and signature where as scala function is an object that
+could be assigned to a variable.
+	* In simple words to say, function defined as member of some object is called a method.
+* Scala also has support for nested functions.
+* Scala Function definition:
+```
+def functionName ([list of parameters]) : [return type] = {
+   function body
+   return [expr]
+}
+    [OR]
+def functionName ([list of parameters]) : [return type] = {
+   function body
+   ([expr])
+}
+
+Here return type could be any valid scala data type. list of parameters would be list of variables separated by comma.
+return type and list of parameters are optional.
+
+Example of a function with return type:
+
+object SumExample{
+def main(args:Array[String]) : Unit = {
+  println(sum(30, 40))
+}
+def sum(a:Int, b:Int) : Int = {
+    return (a + b)
+   }
+ }
+```
+* Function which returns nothing can return Unit that is equivalent to void in Java.
+* Funtions that donot return anything are called Procedures.
+```
+Example of a function that returns nothing:
+object Hello{
+   def main(args:Array[String]) : Unit = {
+      printMe()
+   }
+   def printMe() : Unit = {
+      println("Hello, Scala!")
+   }
+}
+```
+
+* Functions call-by-name:
+	* Typically, the parameters of the function would be by-value parameters which means the value of the parameter is 
+determined before it is passed to the function.
+	* Suppose if we would need a function that accepts an expression as a parameter which will not be evaluated until it 
+is called within our function. To support this feature, scala offers call-by-name parameters.
+```
+Example:
+object CallByName
+{
+  def main(args:Array[String])
+   {
+    delayed(calc());
+
+   }
+     def calc() :Int={
+	
+         println("In calc function...");
+         return 9
+	 }
+   def delayed(t: => Int)
+   {
+    println("In delayed method..");
+    print ("Parameter value is.."+t)
+   }
+}
+
+Output:
+In delayed method..
+In calc function...
+Parameter value is..9
+
+In the above example calc() is the parameter to delayed() function. 
+Once the delayed is invoked, the message : "In delayed method" is printed indicating that delayed() has been entered.
+Now, while executing second print statement in delayed() (the execution takes place from right to left), the 
+parameter 't'indicates the value being returned from calc. Hence calc() is entered and displays the message 
+"In calc function...". The returned value 9 is printed as 
+"Parameter value is...9
+
+Funtion with variable number of arguments:
+The last parameter to a funtion may be repeated. We can variable length arguments list to the function.
+Example:
+def printArgs(a:Int, args:String*)
+{
+  a=10;
+  println("Value of a is...."+a);
+  for(arg<-args)
+  {
+    println(arg);
+  }
+}
+
+printArgs(10,"hello","hi')
+
+Result:
+Value of a is....10
+hello
+hi
+
+a is intialized to 10 and all the remaining arguments are considered as args.
+Here args declared as String* is actually an Array[String]. Also, note that the variable args is specified in the last.
+Ordinary arguments specified after varargs would lead to an error.
+Example:
+def VarArgs_NormPars(args:String*,a:Int)
+     | {
+     |   println("Integer is.."+a);
+     |   for(arg<-args)
+     |   {
+     |     println("Arg value is..."+arg);
+     |   }
+     | }
+
+Result:
+<console>:7: error: *-parameter must come last
+       def VarArgs_NormPars(args:String*,a:Int)
+
+
+Scala lets us specify default values for the function parameters. The arguments for such parameters can be omitted 
+in which case, default value would be taken.
+Example:
+object Test {
+   def main(args: Array[String]) {
+        println( "Returned Value : " + addInt() );
+   }
+   def addInt( a:Int=5, b:Int=7 ) : Int = {
+      var sum:Int = 0
+      sum = a + b
+
+      return sum
+   }
+}
+```
+
+## Closures:
+* Scala closure is a function, whose return value depends on the value of one or more variables declared outside this function.
+```
+	val a = 20
+	val sum = (b:Int) => b + a
+	sum(30)
+	res17: Int = 50
+```
+
+
+## Scala Installation:
+* Scala requires Java JDK
+* Download Java JDK and Install it
+* Add JAVA_HOME
+* Download Scala based on OS
+* Add SCALA_HOME
+* Add Scala executables and Java Executables into the System PATH variable in the .bashrc file.
+### Checking Scala and Java Installations:
+ ```
+  > java -version
+  > javac -version
+  > scala -version
+  > scalac -version
+  ```
+ ## Scala IDEs
+ * Scala Eclipse (Standalone)
+ * Scala Shell (Interactive)
+ * Scala Notebook (Interactive)
+ * Zepplein Notebook (Interactive)
+ * Sublime Text Editor (Standalone)
+ * Vim/Vi Editor (Standalone)
+ * InteliJ (Standalone)
+ * Many more editors
+
+
+
+## Overview:
+
+* Scala stands for Scalable Language
+* Scala was created by Martin Odersky
+* Scala is multi-paradigm programming language
+* Scala is designed express common programming patterns in a concise, elegant, and type-safe way.
+* Scala integrates the features of object-oriented and functional languages.
+* Scala is hybrid Programming language
+* Scala is compiled to run on the Java Virtual Machine (JVM)
+* Scala is crisp, productive, interactive, Scalability and Reliability
+* Scala is interoperable with Java Library.
+
+### Scala Features:
+* Scala is Object Oriented
+  * Scala is pure object oriented
+  * Every value is scala is an Object
+  * Scala Function also is an Object
+  * Subclassing
+  * Mixin-based composition -- Multiple inheritance
+* Scala is Functional
+  * In Scala, every function is an object
+  * Ananymous Functions
+  * Higher- Order functions
+  * Nested
+  * Currying
+* Scala is statically typed language
+* Scala runs on JVM
+* Scala is interoperable with Java
+* Scala Type Inference
+* Scala closures
+
+
+## Scala Basics:
+* Scala Syntax is very similar to Ruby
+* Scala doesn't require semicolon(;) at end of the statement i.e., optional
+* Scala has the following language components:
+  * Class
+  * Object
+  * Method
+  * Function
+  * Closure
+  * Traits
+* We do Scala programming in two days:
+  * Interactive Mode
+  * Script Mode
+* Scala scripts or programs have an extension of ".scala"
+* Scala is case sensitive
+* Scala follows Java convensions
+* Scala doesn't have static members
+* Scala identifiers are used for object, class, method, variable names etc...
+  * Legal Identifiers
+    name, place, _city, _a_salary
+  * Illegal Identifiers
+    $name, 1place, -salary
+* Scala has many language specific reserved keywords
+  * case, class, object, return, if, else, etc...
+* Scala supports two types comments like Java
+  * Single line comments i.e., //
+  * Multiline comments i.e., /*....*/
+* Scala is a line-oriented language where statements may be terminated by semicolons (;) or newlines.
+* In Scala, semicolon at the end of a statement is usually optional.
+* Scala organizes its classes and objects in terms of packages like Java.
+
+### Scala Hello World Program:
+
+##### Interactive Mode:
+    ```
+    println("Hello World")
+    ```
+##### Script Mode:
+    ```
+    object Hello {
+      def main(args:Array[String]) {
+        println("Hello World")
+      }
+    }
+```
+
+## Scala variables:
+* Scala supports two types of variables of any data type.
+  * var -- Mutable variables i.e., reassignment
+  * val -- Immutable variables i.e., constant
+* Scala variable declarations:
+```
+var variableName: [Data Type] = <value>
+val variableName: [Data Type] = <value>
+
+Example:
+  var name: String = "ravi"
+  var name = "hari" --> Type Inference
+  
+  val number: Int = 10
+  val number = 10 --> Type Inference
+  
+  val (name: String, age:Int) = Pair("Ravi", 30)
+   val (name, age) = Pair("Ravi", 30) --> Type Inference
+```
+
+### Variable Scope:
+ * Fields:
+   * Fields are varibales belong to Object
+   * Access inside and outside
+   * vals and vars i.e., mutable and immutable
+ * Method Parameters:
+   * Method arguments
+   * Only vals i.e., always Immutable
+   * Inside method
+ * Local variables:
+   * Declared inside the method
+   * vals and vars i.e., mutable and immutable
+   * Inside the method
+   
