@@ -10,6 +10,8 @@
 * Distributed Systems
   * Systems
   * Scalability
+    * Scale Up - Vertical Scaling/Traditional System
+    * Scale Out - Horizontal Scaling/Distributed System
   * Traditional Systems
   * Distributed Systems
   * Traditional Vs Distributed Systems
@@ -39,9 +41,34 @@
     * Zookeeper - Coordination Service
     * etc...
 * MapReduce Limitations
-* Spark Overview
+* Modern Distributed Computational Engines
+* What is Spark/Why Spark?
 * MapReduce Vs Spark
-* Spark Introduction
+* Spark Overview
+  * Introduction
+  * Features
+    * Speed
+    * Ease of Use
+    * General
+    * Integrations
+    * Client APIs
+    * Ecosystem
+    * Lambda Archiecture
+    * Scalable
+  * Spark Core
+  * Spark Ecosystem
 * Spark Architecture
+  * Application
+  * Job
+  * Driver
+  * SparkContext
+  * Client
+  * WorkerNode
+  * Executor
+  * Cluster Manager
+  * Task
 * Spark Cluster Managers
-* Spark Tools
+  * Local
+  * Spark
+  * Yarn
+  * Mesos
