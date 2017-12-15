@@ -1,6 +1,43 @@
 * Bigdata
+  * Data
+  * Data Growth
+  * Data Life Cycle Management
+  * Data Vs Bigdata
+  * Data properties
+  * Data Sources
+  * Data Formats
+  * Three Vs - Volume, velocity, Variety
 * Distributed Systems
+  * Systems
+  * Scalability
+  * Traditional Systems
+  * Distributed Systems
+  * Traditional Vs Distributed Systems
+  * Types of Distributed Systems
+    * Computation Intensive - CPU Bound
+    * Data Intensive - I/O Bound
+      * Realtime - NoSQL and NewSQL
+      * Near Realtime - Straming Engines i.e., Storm , Flink, Spark Streaming, Samza etc...
+      * Batch - MapReduce, Spark, Flink etc...
 * Hadoop and Hadoop Ecosystem
+  * Hadoop Core
+    * HDFS - Distributed File System
+    * MapReduce - Distributed Processing Engine
+    * Yarn - Distributed Resource Management
+  * Hadoop Ecosystem
+    * Pig - data flow language
+    * Hive - Data Warehouse
+    * HBase - Database
+    * Sqoop - Data Connector
+    * Flume - Log collection framework
+    * Kafka - Distributed Messaging Queue System
+    * Oozie - Workflow Scheduler
+    * Sentry - Security
+    * Mahout - Machine Learning Framework
+    * Imapala - Data Warehouse
+    * Ambari - Clutser Management Service
+    * Zookeeper - Coordination Service
+    * etc...
 * MapReduce Limitations
 * Spark Overview
 * MapReduce Vs Spark
