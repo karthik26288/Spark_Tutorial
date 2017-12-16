@@ -96,6 +96,5 @@
 * Use SparkContext.stop() from the driver or if the main method exits/crashes all the executors will be terminated and the cluster resources will be released by the cluster manager.
 
 ### The following daigram dipicts the flow of Spark application:
-
-
+![Spark Application Architecture]()
 
