@@ -41,7 +41,7 @@
 * SparkContext can execute multiple Spark jobs within single Spark application.
 * SparkContext is not shared in between two or more Spark applications.
 
-### [Cluster Manager](https://github.com/malli3131/Spark_Tutorial/new/master/Spark/Core)
+### [Cluster Manager](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark/Core/Cluster_Managers.md)
 * In Spark, Cluster Manager is responsible for allocating, scheduling and monitoring computing resources.
 * Spark supports five types of Cluster Managers, they are:
   * local - Running on top of native Operating System with one or more threads.
