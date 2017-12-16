@@ -11,6 +11,9 @@
 * Spark is multi purpose i.e., it supports various workloads like ETL, SQL, Machine Learning, Graph Processing, Stream Processing etc...
 * Spark provides high-level APIs in Java, Scala, Python and R, and an optimized engine that supports general execution graphs.
 * Spark has vibrant community.
+* Spark is written in Scala
+* Spark is infintely Scalable
+* Spark is scaled to more than 10000 nodes.
 * Spark has good number of Higher level abstractions:
   * Spark SQL for SQL and structured data processing
   * MLlib for machine learning
