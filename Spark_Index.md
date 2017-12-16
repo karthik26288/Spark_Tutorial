@@ -67,7 +67,7 @@
   * Executor
   * Cluster Manager
   * Task
-* [Spark Cluster Managers](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
+* [Spark Cluster Managers](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark/Core/Cluster_Managers.md)
   * Local
   * Spark
   * Yarn
