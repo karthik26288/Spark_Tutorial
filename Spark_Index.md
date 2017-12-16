@@ -43,7 +43,7 @@
 * [MapReduce Limitations](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
 * [Modern Distributed Computational Engines](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
 * [What is Spark/Why Spark?](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
-* [MapReduce Vs Spark](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
+* [MapReduce Vs Spark](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark/Core/MapReduce_Spark.md)
 * [Spark Overview](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
   * Introduction
   * Features
