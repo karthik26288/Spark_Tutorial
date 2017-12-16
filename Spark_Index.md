@@ -90,9 +90,8 @@
   * Spark WebUI
   * Spark History Server
   * beeline
-* [Spark Abstraction]()
-  * [RDD]()
-  * [Shared variables]()
+*********************************************
+## Spark Core
 * RDD
   * Overview
   * Partitions
@@ -124,5 +123,6 @@
     * persist
     * StorageLevel
 * Shared variables
+  * Overview
   * Broadcast Variables
   * Accumulators
