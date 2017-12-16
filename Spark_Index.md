@@ -115,9 +115,15 @@
   * RDD Operations
     * Transformations
     * Actions
+    * Lazy Evaluation
     * Passing Functions
     * Shuffle
     * Key-Value Paired RDDs
+    * Data Partitioning
+    * Data Joins
+  * Saving RDDs
+    * Return to a collection
+    * Saving into external storage systems like local, HDFS, Cassandra, MongoDB and Any Hadoop output format.
   * RDD Persistance
     * cache
     * persist
