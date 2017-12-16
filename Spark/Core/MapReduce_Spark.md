@@ -28,6 +28,7 @@
 |19.| MapReduce doesn't offer global state  | Spark offers glboal state using Shared Variables  |
 |20.| MapReduce doesn't offer data caching  | Spark offers data caching |
 
+## Summary:
 
 * Spark has excellent performance and is highly cost-effective due its in-memory data processing. It’s compatible with all of Hadoop’s data sources and file formats, and offers easy to use client APIs for several languages, it also has a faster learning curve. Spark even includes graph processing and machine-learning capabilities.
 * Hadoop MapReduce is a more mature platform and it was built for batch processing. It can be more cost-effective than Spark for truly Big Data that doesn’t fit in memory and also due to the greater availability of experienced staff. Furthermore, the Hadoop MapReduce ecosystem is currently bigger thanks to many supporting projects, tools and cloud services.
