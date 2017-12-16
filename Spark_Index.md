@@ -66,9 +66,63 @@
   * WorkerNode
   * Executor
   * Cluster Manager
+  * Stage
   * Task
 * [Spark Cluster Managers](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark/Core/Cluster_Managers.md)
   * Local
   * Spark
   * Yarn
   * Mesos
+  * Kubernetes
+* Spark Installation
+  * Local Mode
+  * Standalone Mode
+  * YARN Mode
+  * Mesos Mode
+* Spark Tools
+  * spark-submit
+  * spark-shell
+  * spark-class
+  * spark-sql
+  * pyspark
+  * sparkR
+  * run-example
+  * Spark WebUI
+  * Spark History Server
+  * beeline
+* [Spark Abstraction]()
+  * [RDD]()
+  * [Shared variables]()
+* RDD
+  * Overview
+  * Partitions
+  * Input and Output Formats
+  * Creating RDDs
+    * Parallel Collections
+    * External Datasets i.e., Local, HDFS, Cassandra, HBase, and any Hadoop Input Formats
+    * From another RDD by transforming
+  * Types RDDs
+    * BaseRRDD
+    * CoGroupedRDD
+    * PairedRDD
+    * HadoopRDD
+    * JdbcRDD
+    * NewHadoopRDD
+    * PartitionPruningRDD
+    * ShuffledRDD
+    * UnionRDD
+    * VertexRDD
+    * EdgeRDD
+  * RDD Operations
+    * Transformations
+    * Actions
+    * Passing Functions
+    * Shuffle
+    * Key-Value Paired RDDs
+  * RDD Persistance
+    * cache
+    * persist
+    * StorageLevel
+* Shared variables
+  * Broadcast Variables
+  * Accumulators
