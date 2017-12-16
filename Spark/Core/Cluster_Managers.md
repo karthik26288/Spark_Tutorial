@@ -16,3 +16,6 @@
 * In between YARN and Mesos, it is better to use YARN if you have already running Hadoop cluster (Apache/CDH/HDP). In case of a brand new project, better to use Mesos(Apache, Mesosphere). There is also a provision to use both of them in colocated manner using Project called Apache Myriad.
 
 * Out of all three modes, Apache Mesos has better resource management capabilities.
+
+### Local - Cluster Manager:
+* Spark runs in Local as cluster Manager i.e., Here spark application runs on top of Operating system natively with one more threads.
