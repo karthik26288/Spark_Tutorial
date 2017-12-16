@@ -57,7 +57,7 @@
     * Scalable
   * Spark Core
   * Spark Ecosystem
-* [Spark Architecture](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark_Index.md)
+* [Spark Architecture](https://github.com/malli3131/Spark_Tutorial/blob/master/Spark/Core/Spark_Architecture.md)
   * Application
   * Job
   * Driver
