@@ -13,12 +13,34 @@ Constructors:
   * SparkContext(sparkConf) - Defaults + overriden values
   * SparkContext(master, appName, sparkConf) -- Defaults + overriden values + appName and spark master
   
-Methods:
+Methods for creating RDDs using collection and external datasets:
 
-  * addFile(String path)
-      Add a file to be downloaded with this Spark job on every node.
-  * addFile(String path, boolean recursive)
-      Add a file to be downloaded with this Spark job on every node. Here path is directory.
+import org.apache.hadoop.io.{Text, LongWritable, NullWritable}
+import org.apache.hadoop.mapreduce.lib.input._
+
+object RDDCreation{
+def main(args:Array[String]){
+   
+   //Text Files
+   val data = sc.newAPIHadoopFile("hdfs://master:9000/spark/people", classOf[TextInputFormat], classOf[LongWritable],   classOf[Text])
+   val mydata = data.map(record => record._2.toString())
+   mydata.collect()
+   
+   
+}
+}
+
+
+
+
+val seqData = sc.sequenceFile[Null, String]("hdfs://master:9000/spark/seq_stocks")
+val mySeqData = seqData.map(record => record._2.toString())
+mySeqData.collect()
+
+
+val seqData = sc.newAPIHadoopFile("hdfs://master:9000/spark/seq_stocks", classOf[SequenceFileInputFormat[NullWritable,Text]], classOf[NullWritable], classOf[Text])
+val mySeqData = seqData.map(record => record._2.toString())
+mySeqData.collect()
       
   
 ```
